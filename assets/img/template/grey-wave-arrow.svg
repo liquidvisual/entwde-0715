@@ -1,0 +1,45 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="1920px" height="173px" viewBox="0 0 1920 173">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="338.45" x2="1920" y2="338.45" spreadMethod="pad">
+<stop  offset="0%" stop-color="#5B5B5D"/>
+
+<stop  offset="24.313725490196077%" stop-color="#C5C7CA"/>
+
+<stop  offset="49.411764705882355%" stop-color="#8A8C8E"/>
+
+<stop  offset="75.29411764705883%" stop-color="#6C6E70"/>
+
+<stop  offset="100%" stop-color="#929497"/>
+</linearGradient>
+
+<g id="Layer2_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 1112.25 47.4
+L 658.65 7.9
+Q 379.75 -14.15 85 25.25 42.65 30.9 0 37.8 42.65 32.75 85 28.75 324.5 6.1 553.55 16.4 566 16.95 578.45 17.65 579.7 17.7 580.95 17.75 619.95 19.85 658.65 22.9
+L 1112.25 62.4
+Q 1518.05 92.2 1920 33.9 1518.05 77.2 1112.25 47.4 Z"/>
+
+<path fill="#FFFFFF" stroke="none" d="
+M 1920 173
+L 1920 33.9
+Q 1518.05 92.2 1112.25 62.4
+L 658.65 22.9
+Q 619.95 19.85 580.95 17.75 579.7 17.7 578.45 17.65 566 16.95 553.55 16.4 324.5 6.1 85 28.75 42.65 32.75 0 37.8
+L 0 173 1920 173 Z"/>
+</g>
+
+<path id="Layer2_1_MEMBER_0_1_STROKES" stroke="#EAE8E8" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 572.55 376
+L 609.45 298.9 572.55 221.75"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer2_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,-204) ">
+<use xlink:href="#Layer2_1_MEMBER_0_1_STROKES"/>
+</g>
+</svg>
