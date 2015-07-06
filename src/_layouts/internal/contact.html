@@ -1,0 +1,66 @@
+---
+layout: internal
+---
+
+{% assign settings = site.data.settings %}
+
+<div class="row outer-row">
+    <div class="medium-6 large-8 columns">
+        <main class="main main-condensed">
+
+			<h2>Head Office</h2>
+
+			<ul class="no-bullet">
+			    <li>
+
+			        <p class="lead"><i class="icon fa fa-map-marker"></i>&nbsp; {{ settings.address }}</p>
+			        <p><a target="_blank" href="{{ settings.google_map }}">View Map&nbsp;<i class="fa fa-angle-right"></i></a></p>
+			    </li>
+			    <li>
+			        <i class="icon fa fa-phone"></i>&nbsp; <b>Tel:</b>&nbsp;
+			        <a href="tel:{{ settings.phone }}">{{ settings.phone }}</a>
+			    </li>
+			    <li>
+			        <i class="icon fa fa-fax"></i></i>&nbsp; <b>Fax:</b>&nbsp;
+			        <span>{{ settings.fax }}</span>
+			    </li>
+			    <li>
+			        <i class="icon fa fa-envelope"></i></i>&nbsp; <b>Email:</b>&nbsp;
+			        <a href="mailto:{{ settings.email }}">{{ settings.email }}</a>
+			    </li>
+			</ul>
+
+			<p>Current time in Adelaide: 10:55 PM Sunday 03 May, 2015</p>
+
+        </main>
+    </div>
+    <div class="medium-6 large-4 columns">
+
+    	<aside class="sidebar">
+
+			<div class="side-box">
+
+				<h3>Sonia Enquiries</h3>
+				<p><a href="mailto:sonia@planetsoftware.com.au">sonia@planetsoftware.com.au</a></p>
+
+				<h3>Year View Support</h3>
+				<p><a href="mailto:yvsupport@planetsoftware.com.au">yvsupport@planetsoftware.com.au</a></p>
+
+				<p>When requesting support on the Year View products, please provide the following information (where appropriate):</p>
+
+				<ul>
+					<li>Operating System (name, version and service pack details)</li>
+					<li>Your licence key (if you are a registered user)</li>
+					<li>Microsoft Outlook (version and service pack details)<span class="primary-color">*</span></li>
+					<li>Version of Product being used (including build number)</li>
+					<li>htm files in the installation folder<span class="primary-color">*</span></li>
+				</ul>
+
+				<p><span class="primary-color">*</span> Outlook Year View Only</p>
+
+			</div>
+
+		</aside>
+
+    </div>
+</div>

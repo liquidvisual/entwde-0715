@@ -1,0 +1,86 @@
+/*
+    FOOTER.CSS
+
+    - Last updated: 02.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$footer-body-font-color: darken($grey-color, 25%);
+
+//-----------------------------------------------------------------
+// Global Footer
+//-----------------------------------------------------------------
+
+.global-footer {
+	position: relative;
+	color: white;
+
+	h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+		// color: darken(white, 20%);
+		margin-bottom: rem-calc(20);
+        // font-size: rem-calc(28);
+	}
+}
+
+//-----------------------------------------------------------------
+// Footer Affiliates
+//-----------------------------------------------------------------
+
+.global-footer-affiliates {
+    padding-top: rem-calc(20);
+
+	@media #{$xlarge-up} {
+        // margin-top: rem-calc(-72);
+	}
+
+    ul li {
+        text-align: center;
+    }
+}
+
+//-----------------------------------------------------------------
+// Global Footer Legal
+//-----------------------------------------------------------------
+
+.global-footer-legal {
+    padding: rem-calc(26 0);
+    background: $dark-color;
+
+    .logo {
+    	margin-right: rem-calc(10);
+        width: 40px;
+        vertical-align: middle;
+
+        @media #{$medium-up} {
+            width: 54px;
+        }
+    }
+
+	p {
+        @media #{$medium-up} {
+            margin-bottom: 0;
+        }
+
+        strong {
+            text-transform: uppercase;
+        }
+	}
+
+    .author-logo {
+        display: block;
+        font-size: rem-calc(14);
+        color: rgba(255, 255, 255, .4);
+
+        .text {
+            margin-right: rem-calc(5);
+        }
+    }
+}
+
+//=========================================
+//
+//=========================================

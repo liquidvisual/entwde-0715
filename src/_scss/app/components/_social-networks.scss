@@ -1,0 +1,55 @@
+/*
+    SOCIAL-NETWORKS.CSS
+
+    - Last updated: 02.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Social Networks
+//-----------------------------------------------------------------
+
+.social-networks {
+	li {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	a {
+		display: block;
+		width: rem-calc(40);
+		line-height: rem-calc(40);
+		height: rem-calc(40);
+		border: 2px solid lighten($dark-color, 20%);
+		font-size: rem-calc(20);
+
+		text-align: center;
+		// margin-left: rem-calc(10); // special case
+		color: white;
+		border-radius: 100%;
+	}
+}
+
+.mm-nolist.social-networks {
+	padding-top: rem-calc(10);
+	overflow: hidden;
+	margin-bottom: rem-calc(15);
+
+	a {
+		margin: rem-calc(0 10 0 0);
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-footer .social-networks a:hover {
+	@media #{$large-up} {
+	    background: white;
+	    color: $dark-color;
+	    border-color: $dark-color;
+	}
+}

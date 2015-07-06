@@ -1,0 +1,23 @@
+---
+layout: internal
+---
+
+{% assign news = site.data.articles %}
+
+<div class="row outer-row">
+    <div class="columns">
+        <main class="main">
+
+            <!-- News Articles -->
+            <div class="media-articles">
+            	{% for item in news %}
+            		{% include media_article.html %}
+            	{% endfor %}
+            </div>
+
+            <!-- Pagination Controls -->
+            {% include snippets/pagination.html %}
+
+        </main>
+    </div>
+</div>

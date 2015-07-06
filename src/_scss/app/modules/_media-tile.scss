@@ -1,0 +1,47 @@
+/*
+    MEDIA.CSS
+
+    - Last updated: 03.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media
+//-----------------------------------------------------------------
+
+.media-tile {
+	display: block;
+	background: #E7E7E7;
+
+	h2 {
+		background: $primary-color;
+		padding: rem-calc(20);
+	}
+
+	.media-tile-text {
+		padding: rem-calc(0 20);
+		color: $body-font-color;
+		overflow: hidden;
+	}
+
+	.media-tile-link {
+		@include transition('background, color');
+		display: block;
+		padding: rem-calc(5 20);
+		background: #DEDEDE;
+		text-align: right;
+		color: grey;
+	}
+
+	&:hover .media-tile-link {
+		@media #{$medium-up} {
+		    background: darken(#DEDEDE, 10%);
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================

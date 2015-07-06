@@ -1,0 +1,13 @@
+<article class="media-article">
+	<a href="{{ item.url }}">
+		<div class="media-body">
+			<h2>{{ item.title }}</h2>
+			<date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
+
+			<!-- SERVER-SIDE TRUNCATION IS VERY IMPORTANT HERE (150 max) -->
+			<p>{{ item.body | strip_html | truncate: 150 }} &nbsp;
+
+			<span class="media-link">Read More &nbsp;<i class="fa fa-angle-right"></i></span></p>
+		</div>
+	</a>
+</article>

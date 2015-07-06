@@ -1,0 +1,43 @@
+---
+layout: master
+---
+
+{% assign hero = page.hero_image %}
+
+<!-- HERO MODULE -->
+<div class="lv-hero-module is-internal">
+    <div class="lv-hero" style="background-image: url('{{ hero | prepend: site.assets }}')" data-background-image="{{ hero | prepend: site.assets }}"></div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="row outer-row">
+        <div class="columns">
+            <div class="animated fadeInLeft">
+                {% if page.title_image %}
+                    <h1><img width="170" src="{{ page.title_image }}" title="{{ page.title }}" alt="{{ page.title }}"></h1>
+                {% elsif page.hero_header_override %}
+                    <h1>{{ page.hero_header_override }}</h1>
+                {% else %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</header>
+
+{% if page.back_title %}
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs-bar">
+        <div class="row outer-row">
+            <div class="columns">
+                <a href="/{{ page.back_title | downcase }}/"><i class="fa fa-angle-left"></i> Back to {{ page.back_title  }}</a>
+            </div>
+        </div>
+    </nav>
+{% endif %}
+
+<!-- CONTENT -->
+<section class="content">
+    {{ content }}
+</section>

@@ -1,0 +1,63 @@
+/*
+    BUTTONS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Buttons
+//-----------------------------------------------------------------
+
+.button,
+.read-more-button {
+	position: relative;
+	border-radius: $global-radius;
+	font-weight: bold;
+	// min-width: rem-calc(100);
+
+	&:after {
+		position: relative;
+		// display: inline-block;
+		top: 1px;
+		padding: 1px 6px;
+		border-radius: 100%;
+		content: "\f105";
+		font-family: "FontAwesome";
+		background: darken($secondary-color, 10%);
+		width: 10px;
+		height: 10px;
+		margin-left: rem-calc(10);
+		font-size: rem-calc(16);
+		text-align: center;
+		line-height: 0;
+	}
+
+	&:hover {
+		// background: lighten($primary-color, 10%);
+	}
+}
+
+//=========================================
+// Product Button
+//=========================================
+
+.minimal-button {
+	background: none;
+	color: $primary-color;
+	font-weight: normal;
+	border: 1px solid #ddd;
+	padding: rem-calc(10 30);
+
+	&:after {
+		background: none;
+		margin-left: 0;
+	}
+
+	&:hover {
+		background: $primary-color;
+		border-color: $primary-color;
+	}
+}

@@ -1,0 +1,41 @@
+{% assign settings = site.data.settings %}
+
+<div class="wave-divider wave-divider-grey"></div>
+
+<!-- FOOTER AFFILIATES -->
+<section class="global-footer-affiliates">
+    <div class="row outer-row">
+        <div class="large-3 columns">
+            <h2>Our <b>Clients</b></h2>
+            <img class="wave-divider-arrow show-for-xxlarge-up" src="/img/template/arrow-divider.svg">
+        </div>
+        <div class="large-9 columns text-center medium-text-right">
+            <ul class="small-block-grid-3 medium-block-grid-5">
+                <li><a href="#"><img src="/img/content/affiliate-1.png" alt="Company Name"></a></li>
+                <li><a href="#"><img src="/img/content/affiliate-2.png" alt="Company Name"></a></li>
+                <li><a href="#"><img src="/img/content/affiliate-3.png" alt="Company Name"></a></li>
+                <li><a href="#"><img src="/img/content/affiliate-4.png" alt="Company Name"></a></li>
+                <li><a href="#"><img src="/img/content/affiliate-5.png" alt="Company Name"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER LEGAL -->
+<section class="global-footer-legal">
+    <div class="row outer-row">
+        <div class="medium-7 large-8 columns text-center medium-text-left">
+            <p><img class="logo" width="54" src="/img/content/tiny-logo@2x.png" alt="{{ settings.company }}">&copy; <strong>{{ settings.company }}</strong>. All Rights Reserved.</p>
+        </div>
+        <div class="medium-5 large-4 columns">
+
+            <!-- Social Networks -->
+            <ul class="social-networks lv-inline-list small-gaps text-center medium-text-right">
+                <li><a title="Facebook" href="{{ settings.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                <li><a title="Twitter" href="{{ settings.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                <li><a title="Google Plus" href="{{ settings.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
+                <li><a title="Linkedin" href="{{ settings.linked_in }}"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div> <!-- .row -->
+</section> <!-- global-footer-legal -->

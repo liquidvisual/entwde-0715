@@ -1,0 +1,19 @@
+# Used to populate fake entries on the Homepage
+
+- title: Sonia
+  url: "/products/sonia/"
+  image: "/img/content/sonia-logo-white@2x.png"
+  body: |
+    Sonia is a web-based, database-driven management tool specifically designed to help your placement officers manage the difficult and time consuming process of allocating several hundred students to field placement venues with accuracy and ease.
+
+- title: "Year View"
+  url: "/products/year-view/"
+  image: "/img/content/year-view-logo-white@2x.png"
+  body: |
+    Provides a full year view planner on various calendar data sources within a web browser using the latest Microsoft technologies to provide users with a rich interactive experience! Ideal for displaying annual leave on your Intranet or events you are promoting on your Internet site.
+
+- title: "Outlook Year View"
+  url: "/products/outlook-year-view/"
+  image: "/img/content/year-view-logo-white@2x.png"
+  body: |
+    Outlook Year View is an ActiveX control that integrates with Microsoft Outlook to provide a full year view on any assigned calendar. This can be any local calendar, or on a public folder calendar, allowing everyone in your organisation to see/share calendar information.

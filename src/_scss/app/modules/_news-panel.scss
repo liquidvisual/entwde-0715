@@ -1,0 +1,131 @@
+/*
+    NEWS-PANEL.CSS
+
+    - Last updated: 02.12.14
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// News Panel (on the homepage hero and news item)
+//-----------------------------------------------------------------
+
+.news-panel {
+    position: relative;
+    padding: rem-calc(30);
+}
+
+//=========================================
+// News Articles
+//=========================================
+
+.news-articles {
+    // margin: rem-calc(0 0 13 0); // override block grid
+
+    @media #{$medium-only} {
+        border-top: 1px solid lighten($secondary-color, 5%);
+        border-bottom: 1px solid lighten($secondary-color, 5%);
+        padding: rem-calc(10 0);
+        margin-bottom: rem-calc(20);
+    }
+}
+
+//=========================================
+// Block Grid
+//=========================================
+
+// .lv-super .news-panel ul {
+//     @include block-grid(1);
+//     @media #{$medium-up} { @include block-grid(3); }
+//     @media #{$large-up}  { @include block-grid(1); }
+
+//     margin: rem-calc(0 0 15 0) !important; // override block grid
+
+//     li {
+//         @media #{$medium-up} {
+//             padding: rem-calc(0 0 0 0);
+//         }
+//         @media #{$large-up} {
+//             padding: 0; // counter block-grid
+//         }
+//     }
+// }
+
+//-----------------------------------------------------------------
+// News Article
+//-----------------------------------------------------------------
+
+.news-article {
+    padding: rem-calc(15 0);
+    line-height: 1.2;
+
+    a {
+        font-size: rem-calc(16);
+        color: $secondary-color;
+        font-size: rem-calc(14);
+        font-weight: bold;
+        display: block;
+    }
+
+    date {
+        display: block;
+        font-size: rem-calc(12);
+        margin-bottom: rem-calc(10);
+        color: darken($secondary-color, 25%);
+        text-transform: uppercase;
+    }
+}
+
+// .news-panel li:last-child .news-article {
+//     border-bottom: 0;
+// }
+
+//-----------------------------------------------------------------
+// Button
+//-----------------------------------------------------------------
+
+.news-panel .button {
+    float: right;
+    width: rem-calc(295);
+
+    @media #{$large-up} {
+        width: 100%;
+    }
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+//-----------------------------------------------------------------
+// Contexts
+//-----------------------------------------------------------------
+
+//=========================================
+// Lead Section Context
+//=========================================
+
+.lead-section .news-panel {
+    padding: 0;
+
+    // li {
+    //     border-bottom: 0;
+    // }
+
+    a {
+        color: white;
+    }
+
+    .news-article {
+        border-top: 1px solid lighten($secondary-color, 5%);
+
+        @media #{$medium-only} {
+            border: 0;
+        }
+    }
+}
+
+
+
+

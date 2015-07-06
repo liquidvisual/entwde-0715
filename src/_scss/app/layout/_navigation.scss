@@ -1,0 +1,180 @@
+/*
+    NAVIGATION.CSS
+
+    - Last updated: 06.07.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------
+
+.global-navigation {
+    z-index: 10;
+}
+
+// Fixes glitch with MMenu changing viewport widths when scrollbar disappears
+// html.no-touch {
+// 	overflow-y: scroll !important;
+// }
+
+//-----------------------------------------------------------------
+// Topbar
+//-----------------------------------------------------------------
+
+.topbar {
+	// Option to have in flow on medium here
+    z-index: 100;
+
+	@media #{$large-up} {
+	    position: absolute;
+        bottom: 20px;
+	    width: 100%; // locked
+	    padding: 0 $column-gutter/2; // locked
+	}
+}
+
+//=========================================
+// General ULs
+//=========================================
+
+.topbar ul {
+	list-style: none; // locked
+	margin: 0; // locked
+	font-size: rem-calc(15);
+    text-transform: uppercase;
+}
+
+//=========================================
+// Visual UL
+//=========================================
+
+.topbar > ul {
+	display: table;
+	// width: 100%; // option A
+	float: right; // option B
+	// background: aqua;
+
+	> li {
+		// position: relative; // option - depending on dropdown
+		display: table-cell;
+        float: left; // prevents hairline weirdness
+        margin: rem-calc(0 2);
+	}
+}
+
+//=========================================
+// Visual Anchors
+//=========================================
+
+.topbar > ul > li > a,
+.topbar > ul > li > .anchor {
+	display: block;
+	line-height: rem-calc(40); // opinionated
+	padding: rem-calc(0 15); // opinionated
+	// text-transform: uppercase;
+    border-radius: $global-radius;
+
+	&:hover {
+		background: #eee;
+	}
+}
+
+//-----------------------------------------------------------------
+// General Anchors
+//-----------------------------------------------------------------
+
+.topbar a {
+    @include transition('background-color');
+    display: block;
+    text-align: center;
+    padding: rem-calc(10 15);
+    // color: $body-font-color;
+    color: #404141;
+}
+
+.topbar a:active,
+.topbar .active > a {
+    background: $secondary-color;
+    color: white;
+}
+
+//=========================================
+// Nested Dropdowns
+//=========================================
+
+.topbar .has-dropdown:hover > a {
+    background: #eee;
+}
+
+/* UX decision, dropdowns are fiddly on tablets */
+.no-touch .topbar .has-dropdown:hover > .dropdown {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+.no-touch .topbar .dropdown .has-dropdown:hover > .dropdown {
+    opacity: 1;
+    height: auto;
+    padding: rem-calc(16);
+}
+
+.topbar .dropdown {
+    @include transition('opacity');
+    display: block;
+    position: absolute;
+    opacity: 0;
+    height: 0; // so hit areas aren't triggered
+    overflow: hidden; // so hit areas aren't triggered
+    // top: 100%;
+    top: auto;
+    left: auto;
+    width: rem-calc(220);
+    background: #eee;
+    margin: 0;
+    border-radius: 0 0 $global-radius $global-radius;
+}
+
+.topbar > ul > li:last-child .dropdown {
+    right: 0;
+}
+
+/* Third level nesting */
+.topbar .dropdown .dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.topbar .dropdown li {
+    position: relative;
+    float: none;
+    display: block;
+    margin: 0;
+}
+
+.topbar .dropdown a {
+    border-bottom: 1px solid darken(#eee, 8%);
+    margin: 0;
+    text-align: left;
+    transition: none;
+    font-size: rem-calc(13);
+    border-radius: 0 0 $global-radius $global-radius;
+}
+
+.topbar .dropdown li:last-child a {
+    border-bottom: 0;
+    // border-bottom: 1px solid #CCCCCC;
+}
+
+.topbar .dropdown a:hover {
+    background: $secondary-color; //#eee;
+    color: white;
+}
+
+//=========================================
+//
+//=========================================

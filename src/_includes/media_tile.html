@@ -1,0 +1,12 @@
+{% assign title = item.title %}
+{% assign body = item.body %}
+
+<a class="media-tile" href="{{ item.url }}">
+    <h2><img width="150" src="{{ item.image }}" title="{{ item.title }}" alt="{{ item.title }}"></h2>
+
+    <div class="media-tile-text" data-match-height>
+        {{ body | markdownify }}
+    </div>
+
+    <span class="media-tile-link">More <i class="fa fa-angle-right"></i></span>
+</a>

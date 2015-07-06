@@ -1,0 +1,18 @@
+---
+layout: internal
+---
+
+<div class="row outer-row">
+    <div class="large-9 columns">
+        <main class="main main-condensed">
+            {{ content }}
+        </main>
+    </div>
+    <div class="large-3 columns">
+        <aside class="sidebar">
+        	{% if page.sidebar %}
+        	    {% include {{ page.sidebar }} %}
+        	{% endif %}
+        </aside>
+    </div>
+</div>

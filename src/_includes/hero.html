@@ -1,0 +1,61 @@
+{% assign hero_images = site.data.carousel_slides %}
+
+<!-- HERO MODULE -->
+<div class="js-carousel lv-hero-module is-homepage">
+
+    {% for hero in hero_images %}
+
+    <!-- Hero Item -->
+    <div class="lv-hero" style="background-image: url('{{ hero.image | prepend: site.assets }}')" data-background-image="{{ hero.image | prepend: site.assets }}">
+
+        <div class="table-wrapper">
+        <div class="table-cell">
+
+            <div class="row outer-row">
+                <div class="medium-8 large-8 medium-centered columns">
+                    <div class="lv-hero-caption text-center"> <!-- Leave here -->
+
+                        <!-- <h1><span>{{ hero.caption_title }}</span></h1> -->
+
+                        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                        <h2>Duis Vel Velit Neque</h2>
+                        <p>Sed Tristique Nibh Facilisis, Rhoncus Quis, Viverra Orci</p>
+                        <p><a href="#" class="button">Learn More</a></p>
+
+                        {% comment %}
+                        <div class="lv-hero-caption-body">
+                            <p>{{ hero.caption_body }}</p>
+                        </div>
+                        <!-- <p><a href="#" class="button large radius"><i class="fa fa-play"></i>&nbsp; Learn More</a></p> -->
+                        {% endcomment %}
+
+                    </div> <!-- .lv-hero-caption -->
+                </div> <!-- .columns -->
+
+            </div> <!-- .row -->
+            </div>
+        </div> <!-- .table-wrapper -->
+
+    </div> <!-- .lv-hero -->
+
+    {% endfor %}
+
+</div> <!-- .lv-hero-module -->
+
+{% comment %}
+<!-- Hero Controls -->
+<div class="lv-hero-controls show-for-xxlarge-up">
+    <span href="#" class="lv-hero-next"></span>
+    <span href="#" class="lv-hero-prev"></span>
+</div>
+{% endcomment %}
+
+<!-- Bullets -->
+
+<div class="row outer-row">
+	<div class="columns">
+        <div class="lv-hero-carousel-bullets-wrapper text-center">
+		  <div class="lv-hero-carousel-bullets show-for-medium-up"></div>
+        </div>
+	</div>
+</div>

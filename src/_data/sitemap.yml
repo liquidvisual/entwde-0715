@@ -1,0 +1,27 @@
+- title: Home
+  url: /
+
+- title: About Us
+  url: /about-us/
+
+- title: Our Services
+  url: /our-services/
+  include_children_in_nav: true
+  children:
+    - title: Service One
+      url: "#"
+    - title: Service Two
+      url: "#"
+    - title: Service Three
+      url: "#"
+    - title: Service Four
+      url: "#"
+
+- title: Our Approach
+  url: /our-approach/
+
+- title: Latest News
+  url: /latest-news/
+
+- title: Contact
+  url: /contact/

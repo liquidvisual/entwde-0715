@@ -1,0 +1,85 @@
+/*
+    SECTIONS.CSS
+
+    - Last updated: 03.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+//-----------------------------------------------------------------
+// Content
+//-----------------------------------------------------------------
+
+.content {
+	padding: rem-calc(15 0 60 0);
+
+	@media #{$medium-up} {
+	    padding: rem-calc(30 0 60 0);
+	}
+}
+
+.main-condensed {
+	@media #{$large-up} {
+	    padding-right: rem-calc(100);
+	}
+}
+
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.lead-section {
+	background: $secondary-color;
+	color: white;
+	padding: rem-calc(20 0 20 0);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+
+	h2, h3 {
+		margin-bottom: rem-calc(20);
+
+		@media #{$medium-up} {
+		    display: table;
+		    height: 56px;
+		    width: 100%;
+		}
+
+		.text {
+			display: table-cell;
+			vertical-align: bottom;
+		}
+	}
+
+	h3 img {
+		@media #{$small-only} {
+		    width: 120px;
+		}
+	}
+
+	p {
+		padding-bottom: rem-calc(20);
+	}
+
+	p,
+	.button,
+	.news-article a {
+		font-size: rem-calc(13);
+	}
+
+	// .button {
+	// 	@media #{$large-up} {
+	// 	    position: absolute;
+	// 	    top: 240px;
+	// 	    right: 15px;
+	// 	    width: 90%;
+	// 	}
+	// }
+}
+
+//=========================================
+//
+//=========================================

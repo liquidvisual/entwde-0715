@@ -1,0 +1,61 @@
+/*
+    FORMS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Forms
+//-----------------------------------------------------------------
+
+.lv-super input {
+	border-radius: 2px;
+}
+
+//-----------------------------------------------------------------
+// Search in Navigation
+//-----------------------------------------------------------------
+
+.global-navigation .search-form {
+    margin: rem-calc(0 0 0 10);
+
+    input {
+        width: rem-calc(130);
+        height: 40px;
+        margin-bottom: 0;
+        box-shadow: none;
+        background: url(../img/template/magnifying-glass-icon.png) no-repeat 90% center;
+    }
+}
+
+//-----------------------------------------------------------------
+// Search in Offcanvas
+//-----------------------------------------------------------------
+
+.off-canvas-menu .search-form {
+    margin: rem-calc(20);
+
+    input {
+    	background: url(../img/ui/search-icon.svg) no-repeat 96% center;
+    	background-color: rgba(white, .03);
+    	background-size: 15px;
+        background-color: darken($primary-color, 10%);
+        color: white;
+        border: 0;
+        border-radius: $global-radius;
+        box-shadow: none;
+        padding: rem-calc(0 15);
+
+        &::-webkit-input-placeholder { color: lighten(#2D8EBC, 40%); }
+        &:-moz-placeholder { color: lighten(#2D8EBC, 40%); }
+        &::-moz-placeholder { color: lighten(#2D8EBC, 40%); }
+        &:-ms-input-placeholder { color: lighten(#2D8EBC, 40%); }
+    }
+}
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,58 @@
+/*
+    SIDEBAR.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sidebar
+//-----------------------------------------------------------------
+
+.sidebar {
+	margin-bottom: rem-calc(30);
+}
+
+.side-box {
+	background: #EEEEEE;
+	padding: rem-calc(20);
+	margin-bottom: rem-calc(30);
+
+	ul {
+		list-style: none;
+		margin: 0;
+
+		li a {
+			display: block;
+			border-top: 1px solid white;
+			padding: rem-calc(10 0);
+		}
+	}
+}
+
+.lv-super .side-nav {
+	li {
+		margin: 0;
+		a {
+			margin-top: -1px;
+			border-top: 1px solid #E5E5E5;
+			border-bottom: 1px solid #E5E5E5;
+			display: block;
+			padding: rem-calc(10 0);
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.sidebar-buttons-grid {
+	// margin-bottom: rem-calc(20);
+	li {
+		padding-bottom: 0;
+		margin: 0;
+	}
+}

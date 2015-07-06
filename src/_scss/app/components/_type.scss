@@ -1,0 +1,54 @@
+/*
+    TYPE.CSS
+
+    - Last updated: 04.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Type
+//-----------------------------------------------------------------
+
+a,
+.anchor {
+	@include transition("color, background");
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	// text-transform: uppercase;
+}
+
+.main h2 {
+	// margin-bottom: rem-calc(30); // is this okay?
+}
+
+date {
+	// text-transform: uppercase;
+}
+
+.h1 { font-size: $h1-font-size; }
+.h2 { font-size: $h2-font-size; }
+.h3 { font-size: $h3-font-size; }
+.h4 { font-size: $h4-font-size; }
+.h5 { font-size: $h5-font-size; }
+.h6 { font-size: $h6-font-size; }
+
+hr {
+	// padding-bottom: rem-calc(30);
+}
+
+.quote {
+	// background: url(../img/ui/quotes.svg) no-repeat 95% bottom;
+	// background-size: 70px;
+	// font-style: italic;
+	p {
+		// color: lighten(grey, 15%);
+	}
+}
+
+//=========================================
+//
+//=========================================

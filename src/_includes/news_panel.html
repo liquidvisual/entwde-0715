@@ -1,0 +1,20 @@
+{% assign news_entries = site.data.articles %}
+{% assign max_entries = include.max_entries %}
+
+<div class="news-panel" data-match-height>
+
+	<div class="news-articles" >
+		<div class="row">
+			{% for item in news_entries | limit: max_entries %}
+				<div class="medium-4 large-12 columns {% if forloop.index == 3 %} hide-for-large-up {% endif %}">
+					<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE (65 chars max) -->
+					<article class="news-article">
+						<date>{{ item.date }}</date>
+						<a href="/news/news-item/">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
+					</article>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</div> <!-- .news-panel -->
