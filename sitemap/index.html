@@ -183,87 +183,105 @@
 
 <!-- HERO MODULE -->
 <div class="lv-hero-module is-internal">
-    <div class="lv-hero" style="background-image: url('/assets/img/content/banners/banner-canola-field.jpg')" data-background-image="/assets/img/content/banners/banner-canola-field.jpg"></div>
-</div>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="row outer-row">
-        <div class="columns">
-            <div class="animated fadeInLeft">
-                
-                    <h1>Sitemap</h1>
-                
+    <!-- Hero Item -->
+    <div class="lv-hero" style="background-image: url(/img/content/hero-1.jpg)" data-background-image="/assets/img/content/hero-1.jpg">
+        <div class="table-wrapper">
+            <div class="table-cell">
+                <div class="row outer-row">
+                    <div class="columns text-center">
+                        <div class="lv-hero-caption"> <!-- Leave here -->
+
+                            <h1>
+                                
+                                    <h1>Sitemap</h1>
+                                
+                            </h1>
+
+                        </div> <!-- .lv-hero-caption -->
+                    </div> <!-- .columns -->
+                </div> <!-- .row -->
             </div>
-        </div>
-    </div>
-</header>
+        </div> <!-- .table-wrapper -->
+    </div> <!-- .lv-hero -->
+
+</div> <!-- .lv-hero-module -->
+
+<div class="wave-divider wave-divider-green"></div>
+
+
+
 
 
 
 <!-- CONTENT -->
 <section class="content">
     <div class="row outer-row">
-    <div class="large-9 columns">
-        <main class="main main-condensed">
-            <!--- This child document initializes the page in Jekyll. -->
+    <div class="large-9 large-push-3 columns">
+        <main class="main">
+            <h2>All Available Pages for Enterprise Wide</h2>
 
-<div class="row">
-	<div class="columns">
-		<h2>All Available Pages for Enterprise Wide</h2>
+<ul class="triangle-list check-list">
+	
+		<li><a href="/about-us/">internal/text_page</a> <small>(About Us)</small></li>
+	
+		<li><a href="/contact/">internal/contact</a> <small>(Contact)</small></li>
+	
+		<li><a href="/">homepage</a> <small>(Home)</small></li>
+	
+		<li><a href="/news/news-item/">internal/news_item</a> <small>(News Item)</small></li>
+	
+		<li><a href="/news/">internal/news</a> <small>(News)</small></li>
+	
+		<li><a href="/services/">internal/text_page</a> <small>(Services)</small></li>
+	
+		<li><a href="/sitemap/">internal/text_page</a> <small>(Sitemap)</small></li>
+	
+</ul>
 
-		<ul class="triangle-list">
-			
-				<li><a href="/about/">internal/text_page</a> <small>(About)</small></li>
-			
-				<li><a href="/contact/">internal/contact</a> <small>(Contact)</small></li>
-			
-				<li><a href="/">homepage</a> <small>(Home)</small></li>
-			
-				<li><a href="/news/news-item/">internal/news_item</a> <small>(News Item)</small></li>
-			
-				<li><a href="/news/">internal/news</a> <small>(News)</small></li>
-			
-				<li><a href="/services/">internal/text_page</a> <small>(Services)</small></li>
-			
-				<li><a href="/sitemap/">internal/text_page</a> <small>(Sitemap)</small></li>
-			
-		</ul>
+<h2>Breakpoints (pxs)</h2>
 
-		<h2>Breakpoints</h2>
+<table style="width: 300px;">
+	<tr>
+		<td>Small</td>
+		<td>640</td>
+	</tr>
+	<tr>
+		<td>Medium</td>
+		<td>641 - 768</td>
+	</tr>
+	<tr>
+		<td>Large</td>
+		<td>769 - 1024</td>
+	</tr>
+	<tr>
+		<td>xLarge</td>
+		<td>1025 - 1170</td>
+	</tr>
+	<tr>
+		<td>xxLarge</td>
+		<td>1171+</td>
+	</tr>
+</table>
 
-		<table style="width: 300px;">
-			<tr>
-				<td>Small</td>
-				<td>640</td>
-			</tr>
-			<tr>
-				<td>Medium</td>
-				<td>1024</td>
-			</tr>
-			<tr>
-				<td>Large</td>
-				<td>1140</td>
-			</tr>
-			<tr>
-				<td>xLarge</td>
-				<td>1300</td>
-			</tr>
-			<tr>
-				<td>xxLarge</td>
-				<td>N/A</td>
-			</tr>
-		</table>
-	</div>
-</div>
+<p><br /></p>
 
-<h3>Notes</h3>
+<h2>Modes</h2>
 
-<p class="panel">Remove <b>'.dev-mode-enabled'</b> class near the body to disable the responsive helper widget.</p>
+<h3>Dev Mode</h3>
+<p class="panel">The <b>'.dev-mode-enabled'</b> class on the div <b><i>'.lv-super'</i></b> will enable the responsive helper widget. Clicking on this widget will also highlight parts of containers to aid with distinguishing layouts.</p>
+
+<h3>Animation Enabled</h3>
+<p class="panel">The <b>'.animation-enabled'</b> class on <b><i>'.lv-super'</i></b> will turn on the intro transitions for the homepage only.</p>
+
+<h3>Splash Screen (Removed)</h3>
+<strike><p class="panel">The <b>'.splash-screen-enabled'</b> class on the div <b><i>'.lv-super'</i></b> will enable the splash screen for first time visits. This uses HTML local storage (not cookies) to log the visit and will only show ONCE.<br />
+To clear the key, remove the class, refresh and then re-enable.</p></strike>
+
 
         </main>
     </div>
-    <div class="large-3 columns">
+    <div class="large-3 large-pull-9 columns">
         <aside class="sidebar">
         	
         </aside>
@@ -300,7 +318,7 @@
 <section class="global-footer-legal">
     <div class="row outer-row">
         <div class="medium-7 large-8 columns text-center medium-text-left">
-            <p><img class="logo" width="54" src="/assets/img/content/tiny-logo@2x.png" alt="Enterprise Wide">&copy; <strong>Enterprise Wide</strong>. All Rights Reserved.</p>
+            <p><img class="logo" width="54" src="/assets/img/content/tiny-logo@2x.png" alt="Enterprise Wide">&copy; <strong>Enterprise Wide</strong>. All Rights Reserved. <a href="/sitemap/">Sitemap</a></p>
         </div>
         <div class="medium-5 large-4 columns">
 
