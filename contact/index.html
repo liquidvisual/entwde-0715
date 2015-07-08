@@ -93,35 +93,35 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Our Services</a>
+			<a class="anchor" href="/our-services/">Our Services</a>
 		
 
 		
 		
 		<ul class="dropdown">
 			
-			<li class=""><a href="#">Service One</a>
+			<li class=""><a href="/our-services/">Service One</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Two</a>
+			<li class=""><a href="/our-services/">Service Two</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Three</a>
+			<li class=""><a href="/our-services/">Service Three</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Four</a>
+			<li class=""><a href="/our-services/">Service Four</a>
 
 				
 				
@@ -137,7 +137,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Our Approach</a>
+			<a class="anchor" href="/our-approach/">Our Approach</a>
 		
 
 		
@@ -149,7 +149,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Latest News</a>
+			<a class="anchor" href="/latest-news/">Latest News</a>
 		
 
 		
@@ -161,7 +161,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Contact</a>
+			<a class="anchor" href="/contact/">Contact</a>
 		
 
 		
@@ -182,7 +182,7 @@
             
 
 <!-- HERO MODULE -->
-<div class="lv-hero-module is-internal">
+<section class="lv-hero-module is-internal">
 
     <!-- Hero Item -->
     <div class="lv-hero" style="background-image: url(/assets/img/content/hero-1.jpg)" data-background-image="/assets/img/content/hero-1.jpg">
@@ -205,7 +205,7 @@
         </div> <!-- .table-wrapper -->
     </div> <!-- .lv-hero -->
 
-</div> <!-- .lv-hero-module -->
+</section> <!-- .lv-hero-module -->
 
 <div class="wave-divider wave-divider-green"></div>
 
@@ -219,10 +219,12 @@
     
 
 <div class="row outer-row">
-    <div class="medium-6 large-8 columns">
+    <div class="medium-6 large-7 columns">
         <main class="main main-condensed">
 
-			<h2>Head Office</h2>
+			<header class="header">
+				<h1>Contact Us</h1>
+			</header>
 
 			<ul class="no-bullet">
 			    <li>
@@ -248,33 +250,73 @@
 
         </main>
     </div>
-    <div class="medium-6 large-4 columns">
+    <div class="medium-6 large-5 columns">
 
-    	<aside class="sidebar">
+    	<form data-abide novalidate method="post" action="http://liquidvisual.net/files/contact-form/">
 
-			<div class="side-box">
+	<!-- Name -->
+	<div class="row">
+		<div class="columns">
+			<label><!-- Your name <small>required</small> -->
+				<input name="name" class="radius" type="text" placeholder="Your name*">
+			</label>
+			<small class="error">Your name is required.</small>
+		</div>
+	</div>
 
-				<h3>Sonia Enquiries</h3>
-				<p><a href="mailto:sonia@planetsoftware.com.au">sonia@planetsoftware.com.au</a></p>
+	<!-- Email -->
+	<div class="row">
+		<div class="columns">
+			<label><!-- Email <small>required</small> -->
+				<input name="email" class="radius" type="email" placeholder="Email*" required>
+			</label>
+			<small class="error">A valid email address is required.</small>
+		</div>
+	</div>
 
-				<h3>Year View Support</h3>
-				<p><a href="mailto:yvsupport@planetsoftware.com.au">yvsupport@planetsoftware.com.au</a></p>
+	<!-- Phone (Optional) -->
+	<div class="row">
+		<div class="columns">
+			<label><!-- Phone -->
+				<input name="phone" class="radius" type="text" placeholder="Phone (optional)">
+			</label>
+			<small class="error">Please try again.</small>
+		</div>
+	</div>
 
-				<p>When requesting support on the Year View products, please provide the following information (where appropriate):</p>
+	<!-- Budget -->
+	<div class="row">
+		<div class="columns">
+			<label><!-- Budget <small>required</small> -->
+				<select name="budget" class="radius">
+					<option selected disabled>Budget</option>
+					<option value="1000-2500">$1000 - $2500</option>
+					<option value="2500-5000">$2500 - $5000</option>
+					<option value="5000-10000">$5000 - $10000</option>
+					<option value="10000-20000">$10000 - $20000</option>
+					<option value="20000+">$20000 or more</option>
+				</select>
+			</label>
+		</div>
+	</div>
 
-				<ul>
-					<li>Operating System (name, version and service pack details)</li>
-					<li>Your licence key (if you are a registered user)</li>
-					<li>Microsoft Outlook (version and service pack details)<span class="primary-color">*</span></li>
-					<li>Version of Product being used (including build number)</li>
-					<li>htm files in the installation folder<span class="primary-color">*</span></li>
-				</ul>
+	<!-- Message -->
+	<div class="row">
+		<div class="columns">
+			<label><!-- Your message <small>required</small> --></label>
+			<textarea rows="10" class="radius" name="message" placeholder="Your message*" required></textarea>
+			<small class="error">Please enter a message.</small>
+		</div>
+	</div>
 
-				<p><span class="primary-color">*</span> Outlook Year View Only</p>
+	<!-- Submit -->
+	<div class="row">
+		<div class="columns text-center">
+			<button type="submit" class="button">Send Message</button>
+		</div>
+	</div>
 
-			</div>
-
-		</aside>
+</form>
 
     </div>
 </div>
@@ -358,35 +400,35 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Our Services</a>
+			<a class="anchor" href="/our-services/">Our Services</a>
 		
 
 		
 		
 		<ul class="dropdown">
 			
-			<li class=""><a href="#">Service One</a>
+			<li class=""><a href="/our-services/">Service One</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Two</a>
+			<li class=""><a href="/our-services/">Service Two</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Three</a>
+			<li class=""><a href="/our-services/">Service Three</a>
 
 				
 				
 
 			</li>
 			
-			<li class=""><a href="#">Service Four</a>
+			<li class=""><a href="/our-services/">Service Four</a>
 
 				
 				
@@ -402,7 +444,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Our Approach</a>
+			<a class="anchor" href="/our-approach/">Our Approach</a>
 		
 
 		
@@ -414,7 +456,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Latest News</a>
+			<a class="anchor" href="/latest-news/">Latest News</a>
 		
 
 		
@@ -426,7 +468,7 @@
 
 		
 		
-			<a class="anchor" href="/about-us/">Contact</a>
+			<a class="anchor" href="/contact/">Contact</a>
 		
 
 		
