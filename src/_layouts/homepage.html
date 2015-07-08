@@ -15,21 +15,21 @@ layout: master
 			<ul class="medium-block-grid-3">
 				<li>
 					<span class="img"><img src="/img/template/chain-feature-icon.png"></span>
-					<h3>SAP SUPPLY CHAIN EXECUTION</h3>
+					<h3>SAP SUPPLY CHAIN<br> EXECUTION</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
 					<p><a class="button minimal-button">Read More</a></p>
 				</li>
 				<li>
 					<span class="img"><img src="/img/template/suitcase-feature-icon.png"></span>
-					<h3>SAP PROFESSIONAL SERVICES AND INTEGRATION</h3>
+					<h3>SAP PROFESSIONAL SERVICES<br> AND INTEGRATION</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
 					<p><a class="button minimal-button">Read More</a></p>
 				</li>
 				<li>
 					<span class="img"><img src="/img/template/folder-feature-icon.png"></span>
-					<h3>SAP BUSINESS INTELLIGENCE</h3>
+					<h3>SAP BUSINESS<br> INTELLIGENCE</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
 					<p><a class="button minimal-button">Read More</a></p>
@@ -41,34 +41,38 @@ layout: master
 
 <div class="wave-divider wave-divider-blue"></div>
 
-<div class="fill-5">
 	<div class="row outer-row">
 		<div class="columns">
-			<div class="large-5 columns">
-				<h3>Latest <b>News</b></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p><a class="minimal-button">More news from Enterprise Wide</a></p>
+			<div class="large-6 columns">
+
+				<header class="header">
+					<h3>Latest <b>News</b></h3>
+				</header>
+
+				{% for item in news_entries | limit: 3 %}
+					<div class="row">
+						<div class="small-1 columns">
+							<i class="fi-calendar"></i>
+						</div>
+						<div class="small-11 columns">
+							<h5>{{ item.title }}</h5>
+							{{ item.body | truncate: 100 }}
+						</div>
+					</div>
+					<hr>
+				{% endfor %}
+
+				<p><a class="button minimal-button">More news from Enterprise Wide</a></p>
+
 			</div>
-			<div class="large-2 columns"></div>
-			<div class="large-5 columns">
-				<h3>Twitter <b>Feed</b></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<div class="large-6 columns">
+
+				<header class="header">
+					<h3>Twitter <b>Feed</b></h3>
+				</header>
+
+
 			</div>
 		</div>
 	</div>
-</div>
-
-<!-- <h3><span class="text">Latest News</span></h3>
-{ % include news_panel.html max_entries=3 %}
-<a class="button button-slim" href="/news/">More News</a> -->
-

@@ -1,8 +1,7 @@
 ---
-layout: internal/news_item
-title: News Item
-permalink: /news/news-item/
-hero_image: /img/content/banners/banner-globe.jpg
+layout: internal/latest_news_item
+title: Latest News Item
+permalink: /latest-news/latest-news-item/
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

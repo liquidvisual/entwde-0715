@@ -1,8 +1,7 @@
-@import "foundation/settings";
 /*
     LIQUIDVISUAL HERO :: A Personal Framework
 
-    - updated: 19.12.14
+    - updated: 07.07.15
     - liquidvisual.com
 
     - Notes -
@@ -13,173 +12,85 @@
 // Variables
 //-----------------------------------------------------------------
 
-// Hero
-$hero-height: rem-calc(10) !default;
-$hero-height-medium: rem-calc(600) !default;
-$hero-background-attachment: inherit !default;
-
-// Captions
-$hero-caption-header-font-family: $header-font-family !default;
-$hero-caption-header-font-size: rem-calc(25) !default;
-$hero-caption-header-font-size-medium: $h1-font-size !default;
-$hero-caption-paragraph-font-size: rem-calc(25) !default;
-$hero-caption-color: white !default;
-
-// Carousel
-$hero-carousel-bullet-size: 12px;
+$hero-height-small: calc(100vh - 50px) !default;
+$hero-height-medium: rem-calc(570) !default;
+$hero-carousel-bullet-size: rem-calc(16) !default;
 
 //-----------------------------------------------------------------
 // Hero Module
 //
-// Hint: mobile is always auto - decision
+// Design: Mobile is always 'auto'
 //-----------------------------------------------------------------
 
 .lv-hero-module {
     overflow: hidden;
-    height: auto;
-    margin-bottom: 0;
+    height: $hero-height-small;
+
+    @media #{$medium-up} {
+       height: $hero-height-medium;
+    }
+
+    //=========================================
+    // Has Auto Height
+    //=========================================
 
     &.has-auto-height {
         height: auto;
     }
 
+    //=========================================
+    // Has Fixed Height
+    //=========================================
+
     &.has-fixed-height {
-        height: $hero-height;
+        height: $hero-height-small;
 
         @media #{$medium-up} {
             height: $hero-height-medium;
         }
     }
-
-    @media #{$medium-up} {
-       height: $hero-height-medium;
-    }
 }
 
-//=========================================
-// Slick Override
-//=========================================
-
-// .slick-track,
-// .slick-list {
-//     height: 100%;
-// }
-
 //-----------------------------------------------------------------
-// Hero - Multiple triggers carousel
+// Hero - Slides
 //-----------------------------------------------------------------
 
 .lv-hero {
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: $hero-background-attachment;
     background-size: cover;
+
+    //=========================================
+    // For Positioning Captions
+    //=========================================
+
+    .table-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+        .table-cell {
+            display: table-cell;
+
+            @media #{$medium-up} {
+                vertical-align: middle;
+            }
+        }
+    }
 }
 
-.is-alternate .lv-hero {
-    background-position-y: 0; /* small touch */
-}
-
-//=========================================
-// Targeting Carousel (if true)
-//=========================================
-
-.js-carousel .lv-hero {
-    background-attachment: scroll; /* failsafe */
-    // cursor: move;
-}
-
-//=========================================
-// Hero Caption
-//=========================================
+//-----------------------------------------------------------------
+// Hero - Caption
+//-----------------------------------------------------------------
 
 .lv-hero-caption {
     display: inline-block; /* more flexibility */
     width: 100%; /* mobile */
-    margin: rem-calc(20 0);
-    padding: rem-calc(10 10 10 15);
-    text-align: center;
-    //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.2;
-        font-family: $hero-caption-header-font-family;
-        font-size: $hero-caption-header-font-size; /* mobile */
-        font-weight: bold;
-
-        @media #{$medium-up} {
-            font-size: $hero-caption-header-font-size-medium; /* mobile */
-        }
-    }
-
-    p {
-        font-size: $hero-caption-paragraph-font-size;
-        margin-bottom: 0;
-    }
+    margin: rem-calc(50 0);
 
     @media #{$medium-up} {
-        text-align: left;
         width: auto;
-    }
-}
-
-//=========================================
-// Overrides (failsafes)
-//=========================================
-
-.lv-super .lv-hero-caption {
-    p, h1, h2, h3, h4, h5, h6 {
-        color: $hero-caption-color;
-        margin-top: 0;
-    }
-}
-
-.lv-super .is-alternate .lv-hero-caption {
-    p, h1, h2, h3, h4, h5, h6 {
-        margin-bottom: 0;
-    }
-}
-
-//=========================================
-// Vertical Center Caption
-//=========================================
-
-.lv-hero .lv-vertical-center {
-    @media #{$medium-up} {
-        position: relative;
-        top: 40%; // to account for top margins of H1s
-        -webkit-transform: translateY(-40%);
-            -ms-transform: translateY(-40%);
-                transform: translateY(-40%);
-    }
-}
-
-// Strip vertical centering on mobile
-.has-auto-height {
-    .lv-hero .lv-vertical-center {
-        @media #{$medium-up} {
-            top: 0;
-            -webkit-transform: none;
-                -ms-transform: none;
-                    transform: none;
-        }
-    }
-}
-
-//=========================================
-// Legacy
-//=========================================
-
-.lt-ie9 .lv-hero .center-vertical {
-    @media #{$medium-up} {
-        top: 40px; /* recommended */
-    }
-}
-
-.lt-ie9 .has-auto-height .lv-hero .center-vertical {
-    @media #{$medium-up} {
-        top: 0; /* ie8 fix */
     }
 }
 
@@ -191,8 +102,8 @@ $hero-carousel-bullet-size: 12px;
     position: absolute;
     top: rem-calc(350);
     width: 100%;
-    height: rem-calc(46);
-    // background: aqua;
+    background: aqua;
+    z-index: 100;
 
     .lv-hero-prev a,
     .lv-hero-next a {
@@ -213,7 +124,7 @@ $hero-carousel-bullet-size: 12px;
     }
 
     .lv-hero-prev a {
-        left: rem-calc(30);
+        left: rem-calc(15);
 
         &:after {
             content: "\f104";
@@ -221,7 +132,7 @@ $hero-carousel-bullet-size: 12px;
     }
 
     .lv-hero-next a {
-        right: rem-calc(30);
+        right: rem-calc(15);
 
         &:after {
             content: "\f105";
@@ -233,35 +144,31 @@ $hero-carousel-bullet-size: 12px;
 // Hero - Carousel Controls
 //-----------------------------------------------------------------
 
-// .lv-hero-carousel-bullets
-// {
-//     position: absolute;
-//     bottom: 10px;
-//     right: 10px;
-//     /*z-index: 100;*/
-// }
+.lv-hero-carousel-bullets-wrapper {
+    position: absolute;
+    bottom: rem-calc(100);
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-// .bx-pager-item
-// {
-//     display: inline-block;
-//     margin: 0 3px;
-// }
+.bx-pager-item {
+    display: inline-block;
+    margin: 0 3px;
+}
 
-// .bx-pager-item a
-// {
-//     display: inline-block;
-//     width: $hero-carousel-bullet-size;
-//     height: $hero-carousel-bullet-size;
-//     background: #676767;
-//     background: rgba(214,214,214,0.5);
-//     border-radius: 100%;
-//     border: 1px solid #BFBFBF;
-//     overflow: hidden;
-//     text-indent: -9999px;
-// }
+.bx-pager-item a {
+    display: inline-block;
+    width: $hero-carousel-bullet-size;
+    height: $hero-carousel-bullet-size;
+    background: rgba(black, 0.7);
+    border-radius: 100%;
+    border: 1px solid #BFBFBF;
+    overflow: hidden;
+    text-indent: -9999px;
+}
 
-// .bx-pager-item a.active
-// {
-//     background: white;
-//     border: 1px solid #676767;
-// }
+.bx-pager-item a.active {
+    background: $secondary-color;
+    border: 1px solid #676767;
+}

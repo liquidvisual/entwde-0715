@@ -99,6 +99,10 @@
 .topbar .active > a {
     background: $secondary-color;
     color: white;
+
+    &:hover {
+        background: $secondary-color !important;
+    }
 }
 
 //=========================================

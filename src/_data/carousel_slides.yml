@@ -1,14 +1,9 @@
-- caption_title: "Impossible only means that you haven't found the solution yet"
+- caption_title: "<h1>H1. LOREM IPSUM DOLOR SIT AMET</h1><h2>H2. DUIS VEL VELIT NEQUE</h2>"
   caption_body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero. Aenean pharetra luctus erat, nec aliquet velit porta nec. Maecenas a velit i..."
   url: /about-us/
   image: "/img/content/hero-1.jpg"
 
-- caption_title: "Impossible only means that you haven't found the solution yet"
-  caption_body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero."
+- caption_title: "<h1>H1. LOREM IPSUM DOLOR SIT AMET</h1>"
+  caption_body: ""
   url: ""
-  image: "/img/content/hero-1.jpg"
-
-- caption_title: "Impossible only means that you haven't found the solution yet"
-  caption_body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum"
-  url: ""
-  image: "/img/content/hero-1.jpg"
+  image: "/img/content/hero-2.png"

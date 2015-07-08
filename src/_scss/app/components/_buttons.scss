@@ -41,6 +41,23 @@
 }
 
 //=========================================
+// Grey Button
+//=========================================
+
+.grey-button {
+	display: block;
+	background: #ddd;
+	font-weight: normal;
+	color: $body-font-color;
+	border-radius: 0;
+	padding: rem-calc(10);
+
+	&:after {
+		display: none;
+	}
+}
+
+//=========================================
 // Product Button
 //=========================================
 

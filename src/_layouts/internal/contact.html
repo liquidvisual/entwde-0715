@@ -5,10 +5,12 @@ layout: internal
 {% assign settings = site.data.settings %}
 
 <div class="row outer-row">
-    <div class="medium-6 large-8 columns">
+    <div class="medium-6 large-7 columns">
         <main class="main main-condensed">
 
-			<h2>Head Office</h2>
+			<header class="header">
+				<h1>Contact Us</h1>
+			</header>
 
 			<ul class="no-bullet">
 			    <li>
@@ -34,33 +36,9 @@ layout: internal
 
         </main>
     </div>
-    <div class="medium-6 large-4 columns">
+    <div class="medium-6 large-5 columns">
 
-    	<aside class="sidebar">
-
-			<div class="side-box">
-
-				<h3>Sonia Enquiries</h3>
-				<p><a href="mailto:sonia@planetsoftware.com.au">sonia@planetsoftware.com.au</a></p>
-
-				<h3>Year View Support</h3>
-				<p><a href="mailto:yvsupport@planetsoftware.com.au">yvsupport@planetsoftware.com.au</a></p>
-
-				<p>When requesting support on the Year View products, please provide the following information (where appropriate):</p>
-
-				<ul>
-					<li>Operating System (name, version and service pack details)</li>
-					<li>Your licence key (if you are a registered user)</li>
-					<li>Microsoft Outlook (version and service pack details)<span class="primary-color">*</span></li>
-					<li>Version of Product being used (including build number)</li>
-					<li>htm files in the installation folder<span class="primary-color">*</span></li>
-				</ul>
-
-				<p><span class="primary-color">*</span> Outlook Year View Only</p>
-
-			</div>
-
-		</aside>
+    	{% include snippets/simple_form.html %}
 
     </div>
 </div>

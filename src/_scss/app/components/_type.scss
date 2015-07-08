@@ -17,8 +17,13 @@ a,
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	// text-transform: uppercase;
+.main {
+	h2, h3, h4, h5, h6 {
+		display: inline-block;
+		padding-bottom: rem-calc(10);
+		border-bottom: 1px solid #ddd;
+		font-weight: 600;
+	}
 }
 
 .main h2 {

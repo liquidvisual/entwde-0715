@@ -1,8 +1,7 @@
 ---
 layout: internal/text_page
-title: About Us
-permalink: /about-us/
-sidebar: sidebar_about.html
+title: Our Approach
+permalink: /our-approach/
 ---
 
 # H1 - This Is a Basic Text Page
