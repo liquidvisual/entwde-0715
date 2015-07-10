@@ -167,7 +167,7 @@
 <section class="lv-hero-module is-internal">
 
     <!-- Hero Item -->
-    <div class="lv-hero" style="background-image: url(/assets/img/content/hero-1.jpg)" data-background-image="/assets/img/content/hero-1.jpg">
+    <div class="lv-hero" style="background-image: url(/assets/img/content/heroes/contact-hero.jpg)" data-background-image="/assets/img/content/heroes/contact-hero.jpg">
         <div class="table-wrapper">
             <div class="table-cell">
                 <div class="row outer-row">
@@ -203,89 +203,82 @@
     
 
 <div class="row outer-row">
-    <div class="medium-6 large-7 columns">
-        <main class="main">
+    <div class="large-6 columns">
+        <main class="main pad-right">
 
 			<header class="header">
-				<h1>Contact Us</h1>
+				<h1>Contact <b>Us</b></h1>
 			</header>
 
 			<br><br>
 
-			<div class="row">
-				<div class="medium-7 columns">
-
-					<!-- OUR ADDRESS -->
-					<div class="media media-address">
-						<div class="media-left">
-						<a href="#">
-							<i class="icon fa fa-map-marker"></i>
-						</a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-title">Our Address:</h4>
-							<p>366 Jefferson Court Hendersonville, NC 28792</p>
-
-							<br>
-							<a href="">Google Map Link</a>
-						</div>
-					</div>
-
+			<!-- OUR ADDRESS -->
+			<div class="media media-address">
+				<div class="media-left">
+				<a href="#">
+					<i class="icon fa fa-map-marker"></i>
+				</a>
 				</div>
-				<div class="medium-5 columns">
+				<div class="media-body">
+					<h4 class="media-title">Our Address:</h4>
+					<p>366 Jefferson Court Hendersonville, NC 28792</p>
 
-					<!-- PHONE -->
-					<div class="media media-address">
-						<div class="media-left">
-							<i class="icon fa fa-phone"></i>
-						</div>
-						<div class="media-body">
-							<h4 class="media-title">Phone:</h4>
-							<a href="tel:(05) 555 555 555">(05) 555 555 555</a>
-						</div>
-					</div>
+					<br>
+					<a href="">Google Map Link</a>
+				</div>
+			</div>
 
-					<!-- FAX -->
-					<div class="media media-address">
-						<div class="media-left">
-							<i class="icon fa fa-fax"></i>
-						</div>
-						<div class="media-body">
-							<h4 class="media-title">Fax:</h4>
-							<span>(05) 555 555</span>
-						</div>
-					</div>
+			<!-- PHONE -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-phone"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Phone:</h4>
+					<a href="tel:(05) 555 555 555">(05) 555 555 555</a>
+				</div>
+			</div>
 
-					<!-- EMAIL -->
-					<div class="media media-address">
-						<div class="media-left">
-							<i class="icon fa fa-envelope"></i>
-						</div>
-						<div class="media-body">
-							<h4 class="media-title">Email:</h4>
-							<a href="mailto:info@enterprisewide.com.au">info@enterprisewide.com.au</a>
-						</div>
-					</div>
+			<!-- FAX -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-fax"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Fax:</h4>
+					<span>(05) 555 555</span>
+				</div>
+			</div>
 
+			<!-- EMAIL -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-envelope"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Email:</h4>
+					<a href="mailto:info@enterprisewide.com.au">info@enterprisewide.com.au</a>
 				</div>
 			</div>
 
         </main>
     </div>
-    <div class="medium-6 large-5 columns">
+    <div class="large-6 columns">
     	<div class="pad-right">
 
-    		<header class="header">
-    			<h1>Contact Form</h1>
-    		</header>
-
-    		<form data-abide novalidate method="post" action="http://liquidvisual.net/files/contact-form/">
+			<!-- Contact Form -->
+			<div class="contact-form">
+				<div class="contact-form-inner">
+		    		<header class="header">
+		    			<h1>Contact <b>Form</b></h1>
+		    		</header>
+		    		<form data-abide novalidate method="post" action="">
 
 	<!-- Name -->
 	<div class="row">
 		<div class="columns">
 			<label><!-- Your name <small>required</small> -->
-				<input name="name" class="radius" type="text" placeholder="Your name*">
+				<input name="name" type="text" placeholder="Your name*">
 			</label>
 			<small class="error">Your name is required.</small>
 		</div>
@@ -295,33 +288,21 @@
 	<div class="row">
 		<div class="columns">
 			<label><!-- Email <small>required</small> -->
-				<input name="email" class="radius" type="email" placeholder="Email*" required>
+				<input name="email" type="email" placeholder="Email*" required>
 			</label>
 			<small class="error">A valid email address is required.</small>
 		</div>
 	</div>
 
-	<!-- Phone (Optional) -->
+	<!-- Subject -->
 	<div class="row">
 		<div class="columns">
-			<label><!-- Phone -->
-				<input name="phone" class="radius" type="text" placeholder="Phone (optional)">
-			</label>
-			<small class="error">Please try again.</small>
-		</div>
-	</div>
-
-	<!-- Budget -->
-	<div class="row">
-		<div class="columns">
-			<label><!-- Budget <small>required</small> -->
-				<select name="budget" class="radius">
-					<option selected disabled>Budget</option>
-					<option value="1000-2500">$1000 - $2500</option>
-					<option value="2500-5000">$2500 - $5000</option>
-					<option value="5000-10000">$5000 - $10000</option>
-					<option value="10000-20000">$10000 - $20000</option>
-					<option value="20000+">$20000 or more</option>
+			<label><!-- Subject <small>required</small> -->
+				<select name="Subject">
+					<option selected disabled>Subject</option>
+					<option value="Option 1">Option 1</option>
+					<option value="Option 2">Option 2</option>
+					<option value="Option 3">Option 3</option>
 				</select>
 			</label>
 		</div>
@@ -331,7 +312,7 @@
 	<div class="row">
 		<div class="columns">
 			<label><!-- Your message <small>required</small> --></label>
-			<textarea rows="10" class="radius" name="message" placeholder="Your message*" required></textarea>
+			<textarea rows="10" name="message" placeholder="Your message*" required></textarea>
 			<small class="error">Please enter a message.</small>
 		</div>
 	</div>
@@ -339,13 +320,21 @@
 	<!-- Submit -->
 	<div class="row">
 		<div class="columns text-center">
-			<button type="submit" class="button">Send Message</button>
+			<button type="submit" class="button expand">Submit</button>
 		</div>
 	</div>
 
 </form>
-    	</div>
+				</div> <!-- .contact-form-inner -->
 
+	    		<!-- WAVE DIVIDER -->
+	    		<div class="wave-divider wave-divider-blue">
+	    			<div class="wave-divider-center"></div>
+	    		</div>
+
+    		</div> <!-- .contact-form -->
+
+    	</div>
     </div>
 </div>
 </section>
