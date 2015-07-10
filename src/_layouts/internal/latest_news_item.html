@@ -1,23 +1,33 @@
 ---
 layout: internal
 hero_header_override: Latest News
-back_title: Latest News
 ---
 
 {% assign item = site.data.articles[0] %}
 
 <div class="row outer-row">
-    <div class="large-9 columns">
-        <main class="main main-condensed">
+    <div class="large-8 large-push-4 columns">
+        <main class="main">
 
-			<article class="media-article">
-			    <div class="media-body">
-			        <h1>{{ item.title }}</h1>
-			        <date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
-			        {{ content | markdownify }}
-			    </div>
-			</article>
+			<!-- Breadcrumbs -->
+        	<p><a href="/latest-news/"><i class="fa fa-angle-left"></i> Back to Latest News</a></p>
+
+			<!-- Media Article -->
+            <article class="media-article">
+                <div class="media-body">
+                    <h1>{{ item.title }}</h1>
+                    <date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
+                    {{ content | markdownify }}
+                </div>
+            </article>
 
         </main>
+    </div>
+    <div class="large-4 large-pull-8 columns">
+        <aside class="sidebar pad-right">
+        	{% if page.sidebar %}
+        	    {% include {{ page.sidebar }} %}
+        	{% endif %}
+        </aside>
     </div>
 </div>

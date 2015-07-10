@@ -1,0 +1,20 @@
+{% assign news_entries = site.data.articles %}
+
+<div class="media-list">
+	{% for item in news_entries | limit: 3 %}
+		<a href="#">
+			<article class="media news-media">
+				<div class="media-left">
+					<div class="media-object text-center">
+						<span class="month">28</span>
+						<span class="day">May</span>
+					</div>
+				</div>
+				<div class="media-body">
+					<h5 class="media-title">{{ item.title }}</h5>
+					<p>{{ item.body | truncate: 100 }}</p>
+				</div>
+			</article>
+		</a>
+	{% endfor %}
+</div>

@@ -1,9 +1,11 @@
-- caption_title: "<h1>H1. LOREM IPSUM DOLOR SIT AMET</h1><h2>H2. DUIS VEL VELIT NEQUE</h2>"
-  caption_body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero. Aenean pharetra luctus erat, nec aliquet velit porta nec. Maecenas a velit i..."
+- title: "H1. LOREM IPSUM DOLOR SIT AMET"
+  subheader: "H2. DUIS VEL VELIT NEQUE"
   url: /about-us/
-  image: "/img/content/hero-1.jpg"
+  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero. Aenean pharetra luctus erat, nec aliquet velit porta nec. Maecenas a velit i..."
+  image: "/img/content/heroes/hero-1.jpg"
 
-- caption_title: "<h1>H1. LOREM IPSUM DOLOR SIT AMET</h1>"
-  caption_body: ""
-  url: ""
-  image: "/img/content/hero-2.png"
+- title: "H1. LOREM IPSUM DOLOR SIT AMET"
+  subheader: "H2. DUIS VEL VELIT NEQUE"
+  url: /about-us/
+  body: ""
+  image: "/img/content/heroes/hero-2.png"

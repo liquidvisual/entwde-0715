@@ -2,6 +2,7 @@
 layout: internal/text_page
 title: Sitemap
 permalink: /sitemap/
+hero_image: /img/content/heroes/hero-1.jpg
 ---
 
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>
@@ -43,3 +44,9 @@ permalink: /sitemap/
 
 <h3>Dev Mode</h3>
 <p class="panel">The <b>'.dev-mode-enabled'</b> class on the div <b><i>'.lv-super'</i></b> will enable the responsive helper widget. Clicking on this widget will also highlight parts of containers to aid with distinguishing layouts.</p>
+
+<h2>Font Icons</h2>
+
+<p>This site uses font icons in some places including the side nav, you can change the icons by using classes shown here:</p>
+
+<p><a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a></p>

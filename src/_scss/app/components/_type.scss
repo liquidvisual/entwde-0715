@@ -19,20 +19,23 @@ a,
 
 .main {
 	h2, h3, h4, h5, h6 {
-		display: inline-block;
-		padding-bottom: rem-calc(10);
-		border-bottom: 1px solid #ddd;
-		font-weight: 600;
+		// display: inline-block;
+		// padding-bottom: rem-calc(10);
+		// border-bottom: 1px solid #ddd;
+		font-weight: 500;
 	}
 }
 
-.main h2 {
-	// margin-bottom: rem-calc(30); // is this okay?
+h2, h3, h4, h5, h6 {
+	// display: inline-block;
+	// padding-bottom: rem-calc(10);
+	// border-bottom: 1px solid #ddd;
+	// font-weight: 600;
 }
 
-date {
-	// text-transform: uppercase;
-}
+
+
+
 
 .h1 { font-size: $h1-font-size; }
 .h2 { font-size: $h2-font-size; }
@@ -51,6 +54,32 @@ hr {
 	// font-style: italic;
 	p {
 		// color: lighten(grey, 15%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.header {
+	h1, h2, h3, h4, h5, h6 {
+		position: relative;
+		font-size: rem-calc(28);
+		border-bottom: 1px solid #E3E3E3; // variablise
+		padding-bottom: rem-calc(10);
+		margin-bottom: rem-calc(30);
+		text-transform: uppercase;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			width: rem-calc(80);
+			height: 3px;
+			background: $primary-color;
+
+		}
 	}
 }
 

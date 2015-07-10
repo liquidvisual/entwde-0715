@@ -1,0 +1,80 @@
+---
+layout: internal
+---
+
+<div class="row outer-row">
+    <div class="large-8 large-push-4 columns">
+        <main class="main">
+
+            <!-- Breadcrumbs -->
+            <p><a href="/our-services/"><i class="fa fa-angle-left"></i> Back to Sap Business Intelligence</a></p>
+
+            <header class="header">
+                <h1>{{ page.header }}</h1>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p>
+
+            <p><img src="/img/template/body-feature.png" alt="Feature"></p>
+
+            <h2>H2 - This Is a Heading</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <br>
+
+            <ul class="medium-block-grid-2">
+                <ul class="medium-block-grid-2">
+                    {% for i in (1..4) %}
+                        <li>
+                            <div class="media media-feature">
+                                <div class="media-left media-middle">
+                                    <img class="media-object" src="/img/content/feature-circle-{{forloop.index}}.png" alt="Feature">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-title">H3. Feature Heading {{ forloop.index }}</h3>
+                                    <p>Lorem ipsum dolor sit amet, consecteur lorem impsum asit</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </ul>
+
+            <h3>H3 - This Is a Heading</h3>
+
+            <p><em>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit sed do</strong> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p>
+
+            <ul class="check-list medium-block-grid-2">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                <li>Lorem ipsum dolor sit amet adipisicing elit</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit aliquip ex ea commodo consequat</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                <li>Lorem ipsum dolor sit amet, aliquip ex ea commodo consequat</li>
+                <li>Lorem ipsum dolor, consectetur adipisicing elit</li>
+            </ul>
+
+            <h4>H4 - This Is a Heading</h4>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h5>H5 - This Is a Heading</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </main>
+    </div>
+    <div class="large-4 large-pull-8 columns">
+        <aside class="sidebar pad-right">
+        	{% if page.sidebar %}
+        	    {% include {{ page.sidebar }} %}
+        	{% endif %}
+        </aside>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+/*
+    MEDIA.CSS
+
+    - Last updated: 08.07.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media Feature
+//-----------------------------------------------------------------
+
+.media-feature .media-title {
+	text-transform: uppercase;
+}
+
+//-----------------------------------------------------------------
+// Media Addressed (Used for Contact)
+//-----------------------------------------------------------------
+
+.media-address {
+	.media-title {
+		color: #9C9C9C;
+		text-transform: uppercase;
+		font-size: rem-calc(13);
+		margin-bottom: rem-calc(5);
+		font-family: $font-family-sans-serif;
+	}
+
+	i {
+		color: #7F7F7F;
+		border: 2px solid #7F7F7F;
+		width: 30px;
+		height: 30px;
+		line-height: 28px;
+		text-align: center;
+		border-radius: 100%;
+		font-size: rem-calc(14);
+	}
+}
+
+//-----------------------------------------------------------------
+// Media
+//-----------------------------------------------------------------
+
+.news-media {
+	.media-title {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: $body-font-family;
+		font-size: rem-calc(16);
+	}
+
+	p {
+		font-size: rem-calc(14);
+	}
+
+	.month {
+		background: $secondary-color;
+		display: block;
+		color: white;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		border-radius: 100%;
+		font-weight: bold;
+		font-size: rem-calc(20);
+	}
+
+	.day {
+		font-weight: bold;
+		color: $body-font-color;
+		text-transform: uppercase;
+		font-size: rem-calc(13);
+	}
+}
+
+//=========================================
+// Context
+//=========================================
+
+.blue-box {
+	background: $primary-color;
+	padding: rem-calc(60 20 20 20);
+	background: url(../img/template/blue-wave-top.svg) no-repeat top, url(../img/template/blue-wave-bottom.svg) no-repeat center 100.1%;
+	background-color: $primary-color;
+	background-size: contain;
+
+	.header * {
+		color: white;
+		border-color: lighten($primary-color, 15%);
+
+		&:before {
+			background: white;
+		}
+	}
+
+	.news-media {
+		border-color: lighten($primary-color, 15%);
+
+		*,
+		.media-title {
+			color: white;
+		}
+
+		.month {
+			background: white;
+			color: $secondary-color;
+		}
+	}
+}

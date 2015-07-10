@@ -31,6 +31,7 @@
 	@media #{$large-up} {
 	    position: absolute;
         bottom: 20px;
+        right: 0;
 	    width: 100%; // locked
 	    padding: 0 $column-gutter/2; // locked
 	}
@@ -73,7 +74,7 @@
 .topbar > ul > li > .anchor {
 	display: block;
 	line-height: rem-calc(40); // opinionated
-	padding: rem-calc(0 15); // opinionated
+	padding: rem-calc(0 12); // opinionated
 	// text-transform: uppercase;
     border-radius: $global-radius;
 

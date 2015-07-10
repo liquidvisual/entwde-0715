@@ -1,0 +1,119 @@
+/*
+    MEDIA.CSS (NEW 2015)
+
+    - Last updated: 08.07.15
+    - hello@liquidvisual.com
+
+    - BASIC USAGE -
+
+    <div class="media">
+    	<div class="media-left">
+    		<a href="#">
+    			<img class="media-object" src="http://placehold.it/64x64">
+    		</a>
+    	</div>
+    	<div class="media-body">
+    		<h4 class="media-title">Media heading</h4>
+    		...
+    	</div>
+    </div>
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$media-gap: rem-calc(30);
+$media-list-gap: rem-calc(20);
+$media-padding: rem-calc(20);
+
+//-----------------------------------------------------------------
+// Media List - Creates dividers
+//-----------------------------------------------------------------
+
+.media-list {
+	padding-left: 0;
+	list-style: none;
+
+	.media {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: $media-list-gap;
+		margin-bottom: $media-list-gap;
+	}
+
+	.media:last-of-type,
+	li:last-child .media,
+	a:last-of-type .media {
+		border-bottom: 0;
+	}
+}
+
+//-----------------------------------------------------------------
+// Anchor Media
+//-----------------------------------------------------------------
+
+a > .media {
+	p {
+		color: $body-font-color;
+	}
+
+	.media-title {
+		color: $header-font-color;
+	}
+}
+
+//-----------------------------------------------------------------
+// Media
+//-----------------------------------------------------------------
+
+.media {
+	margin-bottom: $media-gap;
+
+	img,
+	.media-object {
+		display: block;
+		max-width: none;
+	}
+
+	//=========================================
+	// Type
+	//=========================================
+
+	.media-title {
+		margin: rem-calc(0 0 10 0);
+	}
+
+	p {
+		margin: 0;
+	}
+
+	//=========================================
+	// Alignment
+	//=========================================
+
+	.media-right {
+		padding-left: $media-padding;
+	}
+
+	.media-left {
+		padding-right: $media-padding;
+	}
+
+	.media-left,
+	.media-right,
+	.media-body {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	//=========================================
+	// Vertical Positioning
+	//=========================================
+
+	.media-middle {
+		vertical-align: middle;
+	}
+
+	.media-bottom {
+		vertical-align: bottom;
+	}
+}

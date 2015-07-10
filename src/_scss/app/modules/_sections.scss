@@ -9,75 +9,84 @@
 //-----------------------------------------------------------------
 
 //-----------------------------------------------------------------
-// Content
+// Stage only appears under internal template
 //-----------------------------------------------------------------
 
-.content {
+.stage {
+	position: relative;
 	padding: rem-calc(15 0 60 0);
+	margin-top: -90px;
+	z-index: 100; // mainly to manipulate form
 
 	@media #{$medium-up} {
 	    padding: rem-calc(30 0 60 0);
+	    margin-top: -50px;
+	    margin-bottom: rem-calc(30);
+	}
+
+	@media #{$xlarge-up} {
+	    margin-bottom: rem-calc(50);
 	}
 }
 
-.main-condensed {
+.pad-right {
+	@media #{$xlarge-up} {
+	    padding-right: rem-calc(50);
+	}
+}
+
+//-----------------------------------------------------------------
+// Feature Section
+//-----------------------------------------------------------------
+
+.feature-section {
+	position: relative;
+}
+
+//-----------------------------------------------------------------
+// Feed Section
+//-----------------------------------------------------------------
+
+.feed-section {
+
+
+	@media #{$medium-up} {
+	    padding: rem-calc(150 0);
+	}
+
+	@media #{$medium-only}, #{$medium-only} {
+	    background: #f2f2f2;
+	}
+
 	@media #{$large-up} {
-	    padding-right: rem-calc(100);
-	}
-}
-
-//-----------------------------------------------------------------
-// Sections
-//-----------------------------------------------------------------
-
-.lead-section {
-	background: $secondary-color;
-	color: white;
-	padding: rem-calc(20 0 20 0);
-
-	h1, h2, h3, h4, h5, h6 {
-		color: white;
+	    background: url(../img/template/feature-bg.png) repeat-y center center;
 	}
 
-	h2, h3 {
-		margin-bottom: rem-calc(20);
+	p, a {
+		@media #{$large-up} {
+		    margin: 0;
+		}
+	}
 
+	.large-6:first-of-type {
 		@media #{$medium-up} {
-		    display: table;
-		    height: 56px;
-		    width: 100%;
+		    padding-right: rem-calc(30);
 		}
 
-		.text {
-			display: table-cell;
-			vertical-align: bottom;
+		@media #{$xlarge-up} {
+		    padding-right: rem-calc(70);
 		}
 	}
 
-	h3 img {
-		@media #{$small-only} {
-		    width: 120px;
+	.large-6:last-of-type {
+		@media #{$medium-up} {
+		    padding-left: rem-calc(30);
+		}
+
+		@media #{$xlarge-up} {
+		    padding-left: rem-calc(70);
 		}
 	}
-
-	p {
-		padding-bottom: rem-calc(20);
-	}
-
-	p,
-	.button,
-	.news-article a {
-		font-size: rem-calc(13);
-	}
-
-	// .button {
-	// 	@media #{$large-up} {
-	// 	    position: absolute;
-	// 	    top: 240px;
-	// 	    right: 15px;
-	// 	    width: 90%;
-	// 	}
-	// }
 }
 
 //=========================================

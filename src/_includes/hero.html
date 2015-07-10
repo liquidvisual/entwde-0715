@@ -9,28 +9,30 @@
     <div class="lv-hero" style="background-image: url('{{ hero.image | prepend: site.assets }}')" data-background-image="{{ hero.image | prepend: site.assets }}">
 
         <div class="table-wrapper">
-        <div class="table-cell">
+            <div class="table-cell">
 
-            <div class="row outer-row">
-                <div class="medium-8 large-8 medium-centered columns text-center">
-                    <div class="lv-hero-caption text-center"> <!-- Leave here -->
+                <div class="row outer-row">
+                    <div class="medium-8 large-8 medium-centered columns text-center">
+                        <div class="lv-hero-caption text-center animated fadeInLeft">
 
-                        {{ hero.caption_title }}
-                        {{ hero.caption_body | markdownify }}
+                            <!-- Mandatory -->
+                            <h1>{{ hero.title }}</h1>
+                            <h2>{{ hero.subheader }}</h2>
 
-                        <p><a href="#" class="button">Learn More</a></p>
+                            <!-- Optional -->
+                            {% if hero.body %}
+                                <p>{{ hero.body }}</p>
+                            {% endif %}
 
-                        {% comment %}
-                        <div class="lv-hero-caption-body">
-                            <p>{{ hero.caption_body }}</p>
-                        </div>
-                        <!-- <p><a href="#" class="button large radius"><i class="fa fa-play"></i>&nbsp; Learn More</a></p> -->
-                        {% endcomment %}
+                            <!-- If URL selected -->
+                            {% if hero.url %}
+                                <p><a href="{{ hero.url }}" class="button">Learn More</a></p>
+                            {% endif %}
 
-                    </div> <!-- .lv-hero-caption -->
-                </div> <!-- .columns -->
+                        </div> <!-- .lv-hero-caption -->
+                    </div> <!-- .columns -->
 
-            </div> <!-- .row -->
+                </div> <!-- .row -->
             </div>
         </div> <!-- .table-wrapper -->
 

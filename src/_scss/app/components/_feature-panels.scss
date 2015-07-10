@@ -28,10 +28,19 @@
 	}
 
 	.button {
-		margin: 0;
+		@media #{$medium-up} {
+		    margin: 0;
+		}
 	}
 }
 
 //=========================================
 //
 //=========================================
+
+.feature-panel {
+	@media #{$xlarge-up} {
+	    padding: rem-calc(0 10);
+	}
+
+}

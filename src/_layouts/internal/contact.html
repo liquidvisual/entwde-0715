@@ -1,44 +1,89 @@
 ---
 layout: internal
+hero_header_override: ""
 ---
 
 {% assign settings = site.data.settings %}
 
 <div class="row outer-row">
-    <div class="medium-6 large-7 columns">
-        <main class="main main-condensed">
+    <div class="large-6 columns">
+        <main class="main pad-right">
 
 			<header class="header">
-				<h1>Contact Us</h1>
+				<h1>Contact <b>Us</b></h1>
 			</header>
 
-			<ul class="no-bullet">
-			    <li>
+			<br><br>
 
-			        <p class="lead"><i class="icon fa fa-map-marker"></i>&nbsp; {{ settings.address }}</p>
-			        <p><a target="_blank" href="{{ settings.google_map }}">View Map&nbsp;<i class="fa fa-angle-right"></i></a></p>
-			    </li>
-			    <li>
-			        <i class="icon fa fa-phone"></i>&nbsp; <b>Tel:</b>&nbsp;
-			        <a href="tel:{{ settings.phone }}">{{ settings.phone }}</a>
-			    </li>
-			    <li>
-			        <i class="icon fa fa-fax"></i></i>&nbsp; <b>Fax:</b>&nbsp;
-			        <span>{{ settings.fax }}</span>
-			    </li>
-			    <li>
-			        <i class="icon fa fa-envelope"></i></i>&nbsp; <b>Email:</b>&nbsp;
-			        <a href="mailto:{{ settings.email }}">{{ settings.email }}</a>
-			    </li>
-			</ul>
+			<!-- OUR ADDRESS -->
+			<div class="media media-address">
+				<div class="media-left">
+				<a href="#">
+					<i class="icon fa fa-map-marker"></i>
+				</a>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Our Address:</h4>
+					{{ settings.address | markdownify }}
+					<br>
+					<a href="{{ settings.google_map }}">Google Map Link</a>
+				</div>
+			</div>
 
-			<p>Current time in Adelaide: 10:55 PM Sunday 03 May, 2015</p>
+			<!-- PHONE -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-phone"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Phone:</h4>
+					<a href="tel:{{ settings.phone }}">{{ settings.phone }}</a>
+				</div>
+			</div>
+
+			<!-- FAX -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-fax"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Fax:</h4>
+					<span>{{ settings.fax }}</span>
+				</div>
+			</div>
+
+			<!-- EMAIL -->
+			<div class="media media-address">
+				<div class="media-left">
+					<i class="icon fa fa-envelope"></i>
+				</div>
+				<div class="media-body">
+					<h4 class="media-title">Email:</h4>
+					<a href="mailto:{{ settings.email }}">{{ settings.email }}</a>
+				</div>
+			</div>
 
         </main>
     </div>
-    <div class="medium-6 large-5 columns">
+    <div class="large-6 columns">
+    	<div class="">
 
-    	{% include snippets/simple_form.html %}
+			<!-- Contact Form -->
+			<div class="contact-form">
+				<div class="contact-form-inner">
+		    		<header class="header">
+		    			<h1>Contact <b>Form</b></h1>
+		    		</header>
+		    		{% include simple_form.html %}
+				</div> <!-- .contact-form-inner -->
 
+	    		<!-- WAVE DIVIDER -->
+	    		<div class="wave-divider wave-divider-blue">
+	    			<div class="wave-divider-center"></div>
+	    		</div>
+
+    		</div> <!-- .contact-form -->
+
+    	</div>
     </div>
 </div>

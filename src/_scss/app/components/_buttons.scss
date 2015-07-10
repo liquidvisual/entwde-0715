@@ -15,7 +15,8 @@
 .read-more-button {
 	position: relative;
 	border-radius: $global-radius;
-	font-weight: bold;
+	font-weight: 600;
+	text-transform: uppercase;
 	// min-width: rem-calc(100);
 
 	&:after {
@@ -26,7 +27,7 @@
 		border-radius: 100%;
 		content: "\f105";
 		font-family: "FontAwesome";
-		background: darken($secondary-color, 10%);
+		background: darken($primary-color, 10%);
 		width: 10px;
 		height: 10px;
 		margin-left: rem-calc(10);
@@ -36,7 +37,19 @@
 	}
 
 	&:hover {
-		// background: lighten($primary-color, 10%);
+		background: lighten($primary-color, 10%);
+	}
+}
+
+.lv-hero-module .button {
+	background: $secondary-color;
+
+	&:after {
+		background: darken($secondary-color, 10%);
+	}
+
+	&:hover {
+		background: lighten($secondary-color, 10%);
 	}
 }
 

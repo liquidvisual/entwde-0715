@@ -8,14 +8,23 @@
   url: /our-services/
   include_children_in_nav: true
   children:
-    - title: Service One
-      url: /our-services/
-    - title: Service Two
-      url: /our-services/
-    - title: Service Three
-      url: /our-services/
-    - title: Service Four
-      url: /our-services/
+    - title: Sap Business Intelligence
+      url: /our-services/our-services-item/
+      icon: "fa fa-users"
+      include_children_in_nav: false
+      children:
+        - title: Consulting Services
+          url: /our-services/our-services-item/
+        - title: Support & Maintenence
+          url: /our-services/our-services-item/
+        - title: Software Licencing
+          url: /our-services/our-services-item/
+        - title: Training and Enablement
+          url: /our-services/our-services-item/
+
+    - title: Sap Supply Chain Execution
+      url: /our-services/our-services-item/
+      icon: "fa fa-chain"
 
 - title: Our Approach
   url: /our-approach/

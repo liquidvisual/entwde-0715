@@ -4,6 +4,10 @@
 
     - Notes -
 
+    Warning: Make sure "our-services-item" etc appears only once in sitemap - hash tag rest
+
+    58: <li class="{% if item.url == page.url or forloop.index == third_level_id %} active {% endif %}">
+
     When 'top_level_id' is passed, data is pulled from requested node in /data/sitemap.yml creating nav list.
     Optional: 'exclude_top_level' can be passed through the include, skipping the top level of the side nav.
 
@@ -46,15 +50,18 @@
 
         {% comment %} SECOND LEVEL {% endcomment %}
         {% for item in top_level_node.children %}
-        <li class="{% if forloop.index == second_level_id %} active-parent {% endif %}{% if item.url == page.url %} active {% endif %}">
-            <a href="{{ item.url }}"> {{ item.title }}</a>
+        <li class="{% if forloop.index == second_level_id %} active-parent {% endif %}{% if item.url == second_level_id %} active {% endif %}">
+            <a href="{{ item.url }}">
+                {% if item.icon %}<i class="{{ item.icon }}"></i>{% endif %}
+                {{ item.title }}
+            </a>
 
             {% comment %} THIRD LEVEL {% endcomment %}
             {% if item.children and forloop.index == second_level_id %}
             <ul class="no-bullet">
                 {% for item in item.children %}
-                    <li class="{% if item.url == page.url or forloop.index == third_level_id %} active {% endif %}">
-                        <a href="{{ item.url }}">- {{ item.title }}</a>
+                    <li class="{% if forloop.index == third_level_id %} active {% endif %}">
+                        <a href="{{ item.url }}">{{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

@@ -11,6 +11,17 @@
 // Header
 //-----------------------------------------------------------------
 
+.global-header {
+	// @media #{$small-only} {
+	//     position: fixed;
+	//     top: 0;
+	//     width: 100%;
+	//     z-index: 1000;
+	//     background: white;
+	//     border-bottom: 1px solid #ddd;
+	// }
+}
+
 .global-header .columns { // target inner, since logo can't grow height
 	position: relative;
 	height: 50px;
@@ -73,31 +84,5 @@
 
 	@media #{$medium-up} {
 		@include hamburger($width: 28px, $gap: 6px, $thickness: 4px, $color: #222);
-	}
-}
-
-//-----------------------------------------------------------------
-// Header
-//-----------------------------------------------------------------
-
-.header {
-	h1, h2, h3, h4, h5, h6 {
-		position: relative;
-		font-size: rem-calc(28);
-		border-bottom: 1px solid #E3E3E3; // variablise
-		padding-bottom: rem-calc(10);
-		margin-bottom: rem-calc(30);
-		text-transform: uppercase;
-
-		&:before {
-			content: "";
-			position: absolute;
-			bottom: -1px;
-			left: 0;
-			width: rem-calc(80);
-			height: 3px;
-			background: $primary-color;
-
-		}
 	}
 }

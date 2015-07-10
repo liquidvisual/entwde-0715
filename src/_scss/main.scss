@@ -19,6 +19,7 @@
 @import "liquidvisual/components/breadcrumbs";
 @import "liquidvisual/components/hero";
 @import "liquidvisual/components/inline-list";
+@import "liquidvisual/components/media"; // NEW JULY 2015
 @import "liquidvisual/components/toolbox";
 
 //-----------------------------------------------------------------
@@ -39,7 +40,9 @@
 @import "app/components/feature-panels";
 @import "app/components/forms";
 @import "app/components/lists";
+@import "app/components/media";
 @import "app/components/social-networks";
+@import "app/components/side-nav";
 @import "app/components/type";
 
 //=========================================
@@ -58,7 +61,7 @@
 @import "app/modules/gallery";
 @import "app/modules/hero";
 @import "app/modules/media-article";
-@import "app/modules/media-block";
+// @import "app/modules/media-block";
 @import "app/modules/media-tile";
 @import "app/modules/modules";
 @import "app/modules/news-panel";

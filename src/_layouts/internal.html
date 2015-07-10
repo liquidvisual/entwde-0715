@@ -2,7 +2,7 @@
 layout: master
 ---
 
-{% assign hero = "/img/content/hero-1.jpg" %}
+{% assign hero = page.hero_image %}
 
 <!-- HERO MODULE -->
 <section class="lv-hero-module is-internal">
@@ -13,7 +13,7 @@ layout: master
             <div class="table-cell">
                 <div class="row outer-row">
                     <div class="columns text-center">
-                        <div class="lv-hero-caption"> <!-- Leave here -->
+                        <div class="lv-hero-caption animated fadeInLeft"> <!-- Leave here -->
 
                             <h1>
                                 {% if page.hero_header_override %}
@@ -32,23 +32,14 @@ layout: master
 
 </section> <!-- .lv-hero-module -->
 
-<div class="wave-divider wave-divider-green"></div>
+<!-- WAVE DIVIDER -->
+<div class="wave-divider wave-divider-green">
+    <div class="wave-divider-edge"></div>
+    <div class="wave-divider-center"></div>
+    <div class="wave-divider-edge"></div>
+</div>
 
-
-
-
-{% if page.back_title %}
-    <!-- BREADCRUMBS -->
-    <!-- <nav class="breadcrumbs-bar"> -->
-        <div class="row outer-row">
-            <div class="columns">
-                <a href="/{{ page.back_title | downcase | slugify }}/"><i class="fa fa-angle-left"></i> Back to {{ page.back_title  }}</a>
-            </div>
-        </div>
-    <!-- </nav> -->
-{% endif %}
-
-<!-- CONTENT -->
-<section class="content">
+<!-- STAGE -->
+<section class="stage">
     {{ content }}
 </section>

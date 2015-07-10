@@ -3,67 +3,71 @@ layout: master
 ---
 
 {% assign settings = site.data.settings %}
-{% assign news_entries = site.data.articles %}
+{% assign twitter_feed = site.data.twitter_feed %}
 
 {% include hero.html %}
 
-<div class="wave-divider wave-divider-green"></div>
+<main class="main">
 
-<section class="feature-panels">
-	<div class="row outer-row">
-		<div class="columns text-center">
-			<ul class="medium-block-grid-3">
-				<li>
+	<!-- WAVE DIVIDER -->
+	<div class="wave-divider wave-divider-green">
+		<div class="wave-divider-edge"></div>
+		<div class="wave-divider-center"></div>
+		<div class="wave-divider-edge"></div>
+	</div>
+
+	<!-- FEATURE PANELS -->
+	<section class="feature-section feature-panels">
+		<div class="row outer-row text-center">
+			<div class="medium-4 columns">
+				<div class="feature-panel">
 					<span class="img"><img src="/img/template/chain-feature-icon.png"></span>
 					<h3>SAP SUPPLY CHAIN<br> EXECUTION</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
-					<p><a class="button minimal-button">Read More</a></p>
-				</li>
-				<li>
+					<a class="button minimal-button">Read More</a>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="feature-panel">
 					<span class="img"><img src="/img/template/suitcase-feature-icon.png"></span>
 					<h3>SAP PROFESSIONAL SERVICES<br> AND INTEGRATION</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
-					<p><a class="button minimal-button">Read More</a></p>
-				</li>
-				<li>
+					<a class="button minimal-button">Read More</a>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="feature-panel">
 					<span class="img"><img src="/img/template/folder-feature-icon.png"></span>
 					<h3>SAP BUSINESS<br> INTELLIGENCE</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut.</p>
-					<p><a class="button minimal-button">Read More</a></p>
-				</li>
-			</ul>
+					<a class="button minimal-button">Read More</a>
+				</div>
+			</div>
 		</div>
+	</section>
+
+	<!-- WAVE DIVIDER -->
+	<div class="wave-divider wave-divider-blue">
+		<div class="wave-divider-edge"></div>
+		<div class="wave-divider-center"></div>
+		<div class="wave-divider-edge"></div>
 	</div>
-</section>
 
-<div class="wave-divider wave-divider-blue"></div>
-
-	<div class="row outer-row">
-		<div class="columns">
+	<!-- FEED SECTION -->
+	<section class="feed-section">
+		<div class="row outer-row">
 			<div class="large-6 columns">
 
 				<header class="header">
 					<h3>Latest <b>News</b></h3>
 				</header>
 
-				{% for item in news_entries | limit: 3 %}
-					<div class="row">
-						<div class="small-1 columns">
-							<i class="fi-calendar"></i>
-						</div>
-						<div class="small-11 columns">
-							<h5>{{ item.title }}</h5>
-							{{ item.body | truncate: 100 }}
-						</div>
-					</div>
-					<hr>
-				{% endfor %}
+				{% include news_list.html %}
 
-				<p><a class="button minimal-button">More news from Enterprise Wide</a></p>
-
+				<p><a href="/latest-news/" class="button minimal-button">More news from Enterprise Wide</a></p>
 			</div>
 
 			<div class="large-6 columns">
@@ -72,7 +76,24 @@ layout: master
 					<h3>Twitter <b>Feed</b></h3>
 				</header>
 
+				<div class="media-list">
+					{% for item in twitter_feed | limit: 3 %}
+						<article class="media news-media">
+							<div class="media-left">
+								<div class="media-object">
+									<img width="75" src="/img/content/twitter-logo.png" alt="{{ setttings.company }}">
+								</div>
+							</div>
+							<div class="media-body">
+								{{ item.body | truncate: 100 | markdownify }}
+								<a href="{{ item.url }}">{{ item.date }}</a>
+							</div>
+						</article>
+					{% endfor %}
+				</div>
 
 			</div>
 		</div>
-	</div>
+	</section>
+
+</main>

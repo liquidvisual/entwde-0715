@@ -158,7 +158,7 @@ $small-range: (0em, 40em);            // 640
 $medium-range: (40.063em, 48em);      // 641-768
 $large-range: (48.063em, 64em);       // 769-1024
 $xlarge-range: (64.063em, 73.125em);  // 1025-1170
-$xxlarge-range: (73.188em);           // 1170+
+$xxlarge-range: (78.125em);           // 1250+
 
 $screen: "only screen";
 
@@ -221,7 +221,7 @@ $h5-font-size: rem-calc(17);
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10) !default;
 $h2-font-reduction: rem-calc(3);
-// $h3-font-reduction: rem-calc(5) !default;
+$h3-font-reduction: rem-calc(0);
 $h4-font-reduction: 0;
 // $h5-font-reduction: 0 !default;
 // $h6-font-reduction: 0 !default;
@@ -453,7 +453,7 @@ $paragraph-font-size: rem-calc(15);
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-$button-bg-color: $secondary-color;
+$button-bg-color: $primary-color;
 $button-bg-hover: lighten($secondary-color, 10%); //scale-color($secondary-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -640,7 +640,7 @@ $input-border-color: #E1E1E1; //scale-color($white, $lightness: -20%);
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: none; //inset 0 1px 2px rgba(0,0,0,0.1);
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;

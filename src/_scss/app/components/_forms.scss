@@ -11,8 +11,41 @@
 // Forms
 //-----------------------------------------------------------------
 
-.lv-super input {
-	border-radius: 2px;
+.lv-super input,
+.lv-super select {
+    height: 44px;
+    padding: rem-calc(0 15);
+    margin-bottom: rem-calc(10);
+}
+
+.lv-super input,
+.lv-super select,
+.lv-super textarea {
+    border-radius: 2px;
+}
+
+//-----------------------------------------------------------------
+// Contact Form
+//-----------------------------------------------------------------
+
+.contact-form {
+    position: relative;
+    background: white;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    .wave-divider {
+        margin-top: -10px;
+    }
+
+    .contact-form-inner {
+        padding: rem-calc(30);
+    }
+
+    @media #{$xlarge-up} {
+        margin-top: -200px;
+    }
 }
 
 //-----------------------------------------------------------------
@@ -20,10 +53,10 @@
 //-----------------------------------------------------------------
 
 .global-navigation .search-form {
-    margin: rem-calc(0 0 0 10);
+    margin: rem-calc(0 0 0 15);
 
     input {
-        width: rem-calc(130);
+        width: rem-calc(170);
         height: 40px;
         margin-bottom: 0;
         box-shadow: none;

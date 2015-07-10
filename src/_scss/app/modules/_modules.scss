@@ -1,75 +1,96 @@
 /*
     MODULES.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 09.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Green Wave Divider
+// Wave Divider
 //-----------------------------------------------------------------
+
+.wave-divider {
+	display: table;
+	position: relative;
+	width: 100%;
+
+	// display: none;
+}
+
+//=========================================
+// Cells
+//=========================================
+
+.wave-divider-edge,
+.wave-divider-center {
+	display: table-cell;
+
+
+	@media #{$xlarge-up} {
+	    background-color: white; // prevent bars showing 1px
+	}
+}
+
+//=========================================
+// Center Divider
+//=========================================
+
+.wave-divider-center {
+	width: 100%;
+	height: 78px;
+	background-color: inherit;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	@media (min-width: 1920px) {
+		width: 1920px;
+	}
+}
+
+//=========================================
+// Colors
+//=========================================
 
 .wave-divider-green {
-	position: relative;
-	margin-top: -76px;
-	margin-bottom: rem-calc(30);
-	background: url(../img/template/green-wave.svg) no-repeat center bottom;
-	background-size: 100%;
-	width: 100%;
-	height: 78px; // exact
+	top: -76px;
+	margin-bottom: -10px;
 	z-index: 100;
 
-	@media #{$medium-up} {
-	    background-size: contain;
-	    margin-bottom: rem-calc(60);
+	.wave-divider-center {
+		background-image: url(../img/template/green-wave.svg);
+		background-position: center bottom;
 	}
 }
-
-//-----------------------------------------------------------------
-// Blue Wave Divider
-//-----------------------------------------------------------------
 
 .wave-divider-blue {
-	position: relative;
-	margin-bottom: rem-calc(30);
-	background: url(../img/template/blue-wave.svg) no-repeat center bottom;
-	background-size: 100%;
-	width: 100%;
-	height: 78px; // exact
-	z-index: 100;
+	top: 78px;
+	margin-top: -20px;
 
-	@media #{$medium-up} {
-	    background-size: contain;
-	    // margin-bottom: rem-calc(60);
+	.wave-divider-center {
+		background-image: url(../img/template/blue-wave.svg);
+		background-position: center top;
 	}
 }
-
-//-----------------------------------------------------------------
-// Grey Wave Divider
-//-----------------------------------------------------------------
 
 .wave-divider-grey {
-	position: relative;
-	background: url(../img/template/grey-wave.svg) no-repeat center bottom;
-	background-size: contain;
-	width: 100%;
-	height: 78px; // exact
-	// height: 173px;
+	top: -76px;
+	margin-bottom: -76px;
 
-	@media #{$medium-up} {
-	    background-size: contain;
+	.wave-divider-center {
+		background-image: url(../img/template/grey-wave.svg);
+		background-position: center bottom;
 	}
 }
 
-//=========================================
+//-----------------------------------------------------------------
 // Horizontal Divider
-//=========================================
+//-----------------------------------------------------------------
 
 .wave-divider-arrow {
     position: absolute;
-    top: -60px;
+    bottom: 0;
     right: 20px;
     width: 10%;
 }

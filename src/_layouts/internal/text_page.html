@@ -3,13 +3,19 @@ layout: internal
 ---
 
 <div class="row outer-row">
-    <div class="large-9 large-push-3 columns">
+    <div class="large-8 large-push-4 columns">
         <main class="main">
+
+            <header class="header">
+                <h1>{{ page.header }}</h1>
+            </header>
+
             {{ content }}
+
         </main>
     </div>
-    <div class="large-3 large-pull-9 columns">
-        <aside class="sidebar">
+    <div class="large-4 large-pull-8 columns">
+        <aside class="sidebar pad-right">
         	{% if page.sidebar %}
         	    {% include {{ page.sidebar }} %}
         	{% endif %}

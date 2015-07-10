@@ -10,15 +10,12 @@ description: ""
 email: info@enterprisewide.com.au
 phone: (05) 555 555 555
 fax: (05) 555 555
-address:
+address: "366 Jefferson Court Hendersonville, NC 28792"
 
 # Social Networks
 facebook:
 linked_in:
 google_plus:
-
-# Google Map
-google_map: "https://www.google.com.au/maps?q=82+Rose+Street+Mile+End,+South+Australia+5031&ll=-34.921953,138.570879&spn=0.014093,0.033023&oe=utf-8&client=firefox-a&hnear=82+Rose+St,+Mile+End+South+Australia+5031&gl=au&t=h&z=16"
 
 # Google Analytics
 google_analytics: "UA-XXXXXXXX-X"

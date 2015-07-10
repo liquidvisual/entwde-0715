@@ -1,0 +1,71 @@
+/*
+    HERO.CSS
+
+    - Last updated: 07.07.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Caption Styles
+//-----------------------------------------------------------------
+
+.lv-hero-caption {
+	p, h1, h2, h3, h4, h5, h6 {
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	h1 {
+		margin-bottom: 0;
+		font-size: rem-calc(30);
+		line-height: 1;
+
+		@media #{$medium-up} {
+		    font-size: rem-calc(54);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Contexts
+//-----------------------------------------------------------------
+
+.lv-hero {
+	@media (min-width: 1920px) {
+		background-size: auto;
+	}
+}
+
+//=========================================
+// Homepage Context
+//=========================================
+
+.is-homepage .lv-hero {
+	@media #{$small-only} {
+	    background-position: 70% 100px;
+	    background-color: #022460;
+	}
+}
+
+//=========================================
+// Internal Context
+//=========================================
+
+.lv-hero-module.is-internal {
+	height: auto; // override
+
+	@media #{$medium-up} {
+		height: rem-calc(290);
+	}
+
+	.lv-hero {
+		background-position: center 30%;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------

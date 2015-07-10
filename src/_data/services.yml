@@ -1,0 +1,19 @@
+# Used to populate fake entries in Services Index
+
+- title: Service One
+  url: "/our-services/our-services-item/"
+  image:
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, recusandae. Delectus autem voluptas, inventore similique. Nam eius, quasi laudantium iure molestiae dolorum officia neque, dolorem libero iste est veniam cumque!
+
+- title: Service Two
+  url: "/our-services/our-services-item/"
+  image:
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, recusandae. Delectus autem voluptas, inventore similique. Nam eius, quasi laudantium iure molestiae dolorum officia neque, dolorem libero iste est veniam cumque!
+
+- title: Services Three
+  url: "/our-services/our-services-item/"
+  image:
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, recusandae. Delectus autem voluptas, inventore similique. Nam eius, quasi laudantium iure molestiae dolorum officia neque, dolorem libero iste est veniam cumque!
