@@ -7,34 +7,6 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
-
-//-----------------------------------------------------------------
-// Stage only appears under internal template
-//-----------------------------------------------------------------
-
-.stage {
-	position: relative;
-	padding: rem-calc(15 0 60 0);
-	margin-top: -90px;
-	z-index: 100; // mainly to manipulate form
-
-	@media #{$medium-up} {
-	    padding: rem-calc(30 0 60 0);
-	    margin-top: -50px;
-	    margin-bottom: rem-calc(30);
-	}
-
-	@media #{$xlarge-up} {
-	    margin-bottom: rem-calc(50);
-	}
-}
-
-.pad-right {
-	@media #{$xlarge-up} {
-	    padding-right: rem-calc(50);
-	}
-}
-
 //-----------------------------------------------------------------
 // Feature Section
 //-----------------------------------------------------------------
@@ -48,8 +20,6 @@
 //-----------------------------------------------------------------
 
 .feed-section {
-
-
 	@media #{$medium-up} {
 	    padding: rem-calc(150 0);
 	}
