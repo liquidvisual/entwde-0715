@@ -39,8 +39,11 @@
 //=========================================
 
 .feature-panel {
+	@media #{$small-only} {
+	    margin-bottom: rem-calc(30);
+	}
+
 	@media #{$xlarge-up} {
 	    padding: rem-calc(0 10);
 	}
-
 }

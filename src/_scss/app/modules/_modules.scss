@@ -1,7 +1,7 @@
 /*
     MODULES.CSS
 
-    - Last updated: 09.07.15
+    - Last updated: 11.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -15,8 +15,6 @@
 	display: table;
 	position: relative;
 	width: 100%;
-
-	// display: none;
 }
 
 //=========================================
@@ -26,7 +24,6 @@
 .wave-divider-edge,
 .wave-divider-center {
 	display: table-cell;
-
 
 	@media #{$xlarge-up} {
 	    background-color: white; // prevent bars showing 1px
@@ -65,12 +62,16 @@
 }
 
 .wave-divider-blue {
-	top: 78px;
-	margin-top: -20px;
+	margin-bottom: -78px;
+
+	@media #{$medium-up} {
+	    top: 78px;
+	    margin: -20px 0 0 0;
+	}
 
 	.wave-divider-center {
 		background-image: url(../img/template/blue-wave.svg);
-		background-position: center top;
+		background-position: center top; // technical
 	}
 }
 
