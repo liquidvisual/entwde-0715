@@ -30,21 +30,27 @@
 
 .contact-form {
     position: relative;
-    background: white;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
 
-    .wave-divider {
-        margin-top: -10px;
-    }
-
-    .contact-form-inner {
-        padding: rem-calc(30);
-    }
-
-    @media #{$xlarge-up} {
+    @media #{$large-up} {
         margin-top: -200px;
+    }
+
+    .contact-form-top {
+        background: url(../img/template/contact-top.png) no-repeat bottom center;
+        background-size: contain;
+        height: 60px;
+    }
+
+    .contact-form-content {
+        padding: rem-calc(10 30 0 30);
+        background: url(../img/template/contact-middle.png) repeat-y center;
+        background-size: contain;
+    }
+
+    .contact-form-bottom {
+        background: url(../img/template/contact-bottom.png) no-repeat top center;
+        background-size: contain;
+        height: 75px;
     }
 }
 
