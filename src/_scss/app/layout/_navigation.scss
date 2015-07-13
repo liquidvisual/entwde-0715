@@ -114,6 +114,11 @@
     background: #eee;
 }
 
+// Find better way
+.topbar .has-dropdown.active:hover > a {
+    background: $secondary-color;
+}
+
 /* UX decision, dropdowns are fiddly on tablets */
 .no-touch .topbar .has-dropdown:hover > .dropdown {
     opacity: 1;
