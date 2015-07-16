@@ -8,14 +8,17 @@ description: ""
 
 # Contact Info
 email: info@enterprisewide.com.au
-phone: (05) 555 555 555
-fax: (05) 555 555
-address: "366 Jefferson Court Hendersonville, NC 28792"
+phone: (02) 1234 5678
+fax: (02) 9876 5434
+address: "30 Goodlands Ave Thornleigh, NSW, 2120"
 
 # Social Networks
 facebook:
 linked_in:
 google_plus:
+
+# Google Map
+google_map: "https://www.google.com.au/maps/place/30+Goodlands+Ave,+Thornleigh+NSW+2120/@-33.72712,151.077648,17z/data=!4m2!3m1!1s0x6b12a71bed5bad1d:0x3fe248d76190f9d3"
 
 # Google Analytics
 google_analytics: "UA-XXXXXXXX-X"

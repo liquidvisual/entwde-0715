@@ -43,9 +43,9 @@
 // Homepage Context
 //=========================================
 
-.is-homepage .lv-hero {
+.lv-hero-module.is-homepage > .lv-hero:first-child {
 	@media #{$small-only} {
-	    // background-position: 70% 100px;
+	    background-position: 70% top;
 	    // background-color: #022460;
 	}
 }

@@ -21,15 +21,12 @@
 
 	&:after {
 		position: relative;
-		// display: inline-block;
 		top: 1px;
 		padding: 1px 6px;
 		border-radius: 100%;
 		content: "\f105";
 		font-family: "FontAwesome";
 		background: darken($primary-color, 10%);
-		width: 10px;
-		height: 10px;
 		margin-left: rem-calc(10);
 		font-size: rem-calc(16);
 		text-align: center;

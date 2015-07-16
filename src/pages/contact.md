@@ -1,8 +1,8 @@
 ---
 layout: internal/contact
-title: Contact
-permalink: /contact/
-hero_image: /img/content/heroes/contact-hero.jpg
+title: Contact Us
+permalink: /contact-us/
+hero_image: /img/content/heroes/contact-hero.png
 ---
 
 <!--- This child document initializes the page in Jekyll. -->
