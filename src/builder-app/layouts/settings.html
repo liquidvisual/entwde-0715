@@ -1,0 +1,12 @@
+---
+---
+
+<div style="padding:20px">
+	<br>
+	<h2>Settings (Generated from site.data.settings via Jekyll)</h2>
+
+	<!-- Jekyll Code -->
+	{% for item in site.data.settings %}
+		<p>{{ item[0] }} = {{ item[1] }}</p>
+	{% endfor %}
+</div>
