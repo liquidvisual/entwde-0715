@@ -25,7 +25,8 @@ module.exports = function (grunt) {
       dist: 'dist',
       assets: 'dist/assets',
       port: '9292',
-      git: 'git@github.com:liquidvisual/entwde-0715.git',
+      // git: 'git@github.com:liquidvisual/entwde-0715.git',
+      git: 'https://github.com/liquidvisual/entwde-0715.git',
       // IMPORTANT: Set a baseurl on line 364
     },
     //-----------------------------------------------------
@@ -58,6 +59,7 @@ module.exports = function (grunt) {
             '.jekyll/**/*.html',
             '{.tmp,<%= yeoman.app %>}/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
+            '{.tmp,<%= yeoman.app %>}/builder-app/scripts/**/*.js',
             '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
